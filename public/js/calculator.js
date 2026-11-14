@@ -3,7 +3,10 @@ import { T, lang, makeT, fmt, el, btn, info, privacyLink, loadData, api, respond
 
 const P = {
   cs: {
-    h: "Která strana je vám nejblíž?", p: "25 výroků. Vaše odpovědi se porovnají s postoji stran a s tím, co strany skutečně udělaly.",
+    h: "Která strana je vám nejblíž?", p: "Porovnejte své názory s tím, co strany říkají, a s tím, co skutečně udělaly. Zabere to asi pět minut.",
+    steps: [["Odpovězte na 25 výroků", "U každého zvolíte, jak moc souhlasíte. Výrok můžete přeskočit."], ["Označte, na čem vám záleží", "Důležité výroky se do shody počítají dvakrát."], ["Podívejte se na shodu", "U každé strany uvidíte shodu, doložené kroky ve vládě a srovnání výrok po výroku."]],
+    kbd: "Odpovídat lze i klávesami", skip_note: "Přeskočený výrok se do shody nepočítá. K odpovědi se můžete vrátit tlačítkem Zpět.",
+    read_h: "Jak výsledek číst", read: ["Shoda 100 % znamená, že se u všech započtených výroků shodnete. Shoda 0 % znamená opak.", "Každá strana začíná na 50 % díky pěti pomyslným výrokům s poloviční shodou. Strana s málo známými postoji tak nemůže náhodou vyhrát.", "Štítek u strany říká, z kolika vašich odpovědí se shoda počítá. Čím méně jich je, tím méně je číslo spolehlivé."],
     important: "Tento výrok je pro mě důležitý (dvojnásobná váha)", finish: "Zobrazit výsledek",
     scale: ["Rozhodně souhlasím", "Spíše souhlasím", "Nevím / je to složitější", "Spíše nesouhlasím", "Rozhodně nesouhlasím"],
     res_h: "Váš výsledek", res_p: "Shoda ukazuje, jak blízko jsou vaše odpovědi postojům strany. Není to doporučení, koho volit.",
@@ -23,7 +26,10 @@ const P = {
     save_b: "Uložit mé odpovědi", again: "Vyplnit znovu", to_survey: "Pokračovat na průzkum: jak má být Česko spravováno"
   },
   en: {
-    h: "Which party is closest to you?", p: "25 statements. Your answers are compared with party positions and with what the parties actually did.",
+    h: "Which party is closest to you?", p: "Compare your views with what parties say and with what they actually did. It takes about five minutes.",
+    steps: [["Answer 25 statements", "For each one you choose how much you agree. You can skip a statement."], ["Mark what matters to you", "Important statements count twice in the match."], ["Look at the match", "For each party you see the match, documented steps in government and a statement-by-statement comparison."]],
+    kbd: "You can also answer with the keys", skip_note: "A skipped statement does not count in the match. Use Back to return to an answer.",
+    read_h: "How to read the result", read: ["A 100% match means you agree on every counted statement. A 0% match means the opposite.", "Every party starts at 50% because of five imaginary statements with a half match. A party with few known positions therefore cannot win by chance.", "The label next to a party says how many of your answers the match is based on. The fewer there are, the less reliable the number."],
     important: "This statement is important to me (double weight)", finish: "Show my result",
     scale: ["Strongly agree", "Somewhat agree", "Not sure / it is complicated", "Somewhat disagree", "Strongly disagree"],
     res_h: "Your result", res_p: "The match shows how close your answers are to a party's positions. It is not advice on how to vote.",
@@ -64,7 +70,9 @@ export function score(party, answers, weight) {
 }
 
 function vIntro() {
-  return [el("h1", {}, t("h")), el("div", { class: "card" }, el("p", {}, t("p")), el("div", { class: "row" }, btn(t("start"), () => { S.view = "q"; S.i = 0; draw(); }, "primary"))),
+  return [el("h1", {}, t("h")), el("p", { class: "lead" }, t("p")),
+    el("div", { class: "card" }, el("ol", { class: "steps" }, t("steps").map(([a, b]) => el("li", {}, el("div", {}, el("strong", {}, a), el("span", {}, b))))),
+      el("div", { class: "row" }, el("span"), btn(t("start"), () => { S.view = "q"; S.i = 0; draw(); }, "primary"))),
     el("div", { class: "note" }, t("warn")),
     el("p", { class: "small muted" }, T[lang].research, " ", privacyLink())];
 }
@@ -78,11 +86,13 @@ function vQuestion() {
     el("p", { class: "muted small" }, `${S.i + 1} ${t("of")} ${st.length}`),
     el("div", { class: "progress" }, el("i", { style: `width:${100 * S.i / st.length}%` })),
     el("div", { class: "card" }, el("p", { class: "statement" }, s[lang]), info(s),
-      el("div", { class: "scale" }, [2, 1, 0, -1, -2].map((v, i) => btn(t("scale")[i], () => answer(v), cur && cur.a === v ? "on" : ""))),
+      el("div", { class: "scale" }, [2, 1, 0, -1, -2].map((v, i) => btn(t("scale")[i], () => answer(v), ["a2", "a1", "a0", "d1", "d2"][i] + (cur && cur.a === v ? " on" : "")))),
+      el("p", { class: "small muted kbd-hint" }, t("kbd"), " ", [1, 2, 3, 4, 5].map(n => [el("kbd", {}, n), " "])),
       el("p", {}, el("label", { class: "check small" }, imp, t("important"))),
       el("div", { class: "row" }, S.i > 0 ? btn(t("back"), () => step(-1)) : el("span"),
         el("span", {}, btn(t("skip"), () => { delete S.answers[s.id]; step(1); }), " ",
-          S.i === st.length - 1 ? btn(t("finish"), () => { S.view = "result"; draw(); }, "primary") : (cur ? btn(t("next"), () => step(1)) : null))))
+          S.i === st.length - 1 ? btn(t("finish"), () => { S.view = "result"; draw(); }, "primary") : (cur ? btn(t("next"), () => step(1)) : null)))),
+    el("p", { class: "hint" }, t("skip_note"))
   ];
 }
 
@@ -126,11 +136,14 @@ function vResult() {
             el("td", {}, p ? posLabel(p.v) : el("span", { class: "pos-0" }, t("pu"))), el("td", { class: "small" }, did(p)), el("td", { class: "small" }, basis(p))); }))))))));
   };
   paint();
-  const out = el("output", { class: "small muted" }, S.weight + " %");
+  list.classList.add("grow");
+  setTimeout(() => list.classList.remove("grow"), 900);
+  const out = el("output", { class: "small" }, S.weight + " %");
   const slider = el("input", { type: "range", min: 0, max: 100, step: 10, value: S.weight, "aria-label": t("sl_h"),
     oninput: e => { S.weight = +e.target.value; out.textContent = S.weight + " %"; S.saved = false; paint(); } });
   return [
-    el("h1", {}, t("res_h")), el("p", {}, t("res_p")),
+    el("h1", {}, t("res_h")), el("p", { class: "lead" }, t("res_p")),
+    el("details", { class: "info" }, el("summary", {}, t("read_h")), t("read").map(x => el("p", { class: "small" }, x))),
     el("div", { class: "card" }, el("strong", {}, t("sl_h")), el("div", { class: "slider" }, el("span", { class: "small" }, t("sl_l")), slider, el("span", { class: "small" }, t("sl_r")), out),
       el("p", { class: "small muted" }, fmt(t("sl_p"), { n: all.length, c: all.filter(p => p.acted.v !== p.v).length }))),
     list, tieNote,
@@ -158,6 +171,13 @@ function vSave() {
 }
 
 if (typeof document !== "undefined") {
+  document.addEventListener("keydown", e => {
+    if (S.view !== "q" || e.ctrlKey || e.metaKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    const k = "12345".indexOf(e.key);
+    if (k < 0) return;
+    const b = document.querySelectorAll(".scale button")[k];
+    if (b) b.click();
+  });
   draw = mount(async () => {
     if (!D) D = await loadData("statements", "parties");
     return S.view === "intro" ? vIntro() : S.view === "q" ? vQuestion() : vResult();

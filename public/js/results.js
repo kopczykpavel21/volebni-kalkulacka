@@ -6,14 +6,14 @@ const P = {
     h: "Co odpověděli ostatní", n: "Uložené odpovědi: kalkulačka {c}, průzkum {s}, obojí {l}.",
     warn: "Respondenti se do nástroje přihlásili sami. Výsledky popisují uživatele nástroje, ne celou populaci Česka.",
     hidden: "Výsledky se zobrazí, až odpoví aspoň {min} lidí. Zatím jich je {n}.",
-    h2: "Průzkum: co ponechat a co změnit", h1b: "Kalkulačka: souhlas s výroky", bg: "Kdo odpovídal",
+    read: "Každý pruh ukazuje podíly odpovědí na jednu otázku. Najetím myší na část pruhu zobrazíte přesný počet.", h2: "Průzkum: co ponechat a co změnit", h1b: "Kalkulačka: souhlas s výroky", bg: "Kdo odpovídal",
     dirs: "Směr změny (z těch, kdo chtějí změnu)", imp: "označilo jako důležité", texts: "{n} lidí připsalo vlastní odpověď"
   },
   en: {
     h: "What others answered", n: "Saved answers: calculator {c}, survey {s}, both {l}.",
     warn: "Respondents chose to use this tool. Results describe its users, not the whole Czech population.",
     hidden: "Results appear once at least {min} people have answered. So far there are {n}.",
-    h2: "Survey: what to keep and what to change", h1b: "Calculator: agreement with the statements", bg: "Who answered",
+    read: "Each bar shows the shares of answers to one question. Hover over a part of a bar to see the exact count.", h2: "Survey: what to keep and what to change", h1b: "Calculator: agreement with the statements", bg: "Who answered",
     dirs: "Direction of change (among those who want change)", imp: "marked as important", texts: "{n} people added their own answer"
   }
 };
@@ -60,7 +60,7 @@ function background() {
 
 mount(async () => {
   if (!D) { [D, R] = await Promise.all([loadData("statements", "survey"), api("results")]); }
-  return [el("h1", {}, t("h")), el("p", {}, fmt(t("n"), { c: R.calculator.n, s: R.survey.n, l: R.linked })), el("div", { class: "note" }, t("warn")),
+  return [el("h1", {}, t("h")), el("p", { class: "lead" }, fmt(t("n"), { c: R.calculator.n, s: R.survey.n, l: R.linked })), el("div", { class: "note" }, t("warn")), el("p", { class: "hint" }, t("read")),
     el("h2", {}, t("h2")), legend([["s-keep", t("keep")], ["s-change", t("change")], ["s-unsure", t("unsure")]]), survey(),
     el("h2", {}, t("h1b")), legend([["s-agree", t("agree")], ["s-neutral", t("neutral")], ["s-dis", t("disagree")]]), calculator(), background()];
 });

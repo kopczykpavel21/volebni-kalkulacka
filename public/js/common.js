@@ -55,12 +55,12 @@ export const info = o => o.info ? el("details", { class: "info" }, el("summary",
 export const pct = (a, b) => (b ? Math.round(100 * a / b) : 0);
 
 export function stack(parts, total) {
-  return el("div", { class: "stack", role: "img", "aria-label": parts.map(p => `${p.label} ${pct(p.n, total)} %`).join(", ") },
+  return el("div", { class: "stack grow", role: "img", "aria-label": parts.map(p => `${p.label} ${pct(p.n, total)} %`).join(", ") },
     parts.filter(p => p.n).map(p => el("span", { class: p.cls, style: `width:${100 * p.n / total}%`, title: `${p.label}: ${p.n} (${pct(p.n, total)} %)` })));
 }
 export function hbars(labels, counts, total) {
   return labels.map((l, i) => ({ l, n: counts[i] || 0 })).sort((a, b) => b.n - a.n).map(x =>
-    el("div", { class: "hbar" }, el("span", {}, x.l), el("span", { class: "t" }, el("i", { style: `width:${total ? 100 * x.n / total : 0}%` })), el("span", { class: "v" }, `${x.n} · ${pct(x.n, total)} %`)));
+    el("div", { class: "hbar grow" }, el("span", {}, x.l), el("span", { class: "t" }, el("i", { style: `width:${total ? 100 * x.n / total : 0}%` })), el("span", { class: "v" }, `${x.n} · ${pct(x.n, total)} %`)));
 }
 export const legend = items => el("div", { class: "legend" }, items.map(([cls, l]) => el("span", {}, el("i", { class: cls }), l)));
 
@@ -99,7 +99,8 @@ export function mount(render) {
     const t = T[lang];
     document.querySelector("header").replaceChildren(
       el("a", { class: "brand", href: "/" }, t.brand, el("span", {}, "prototyp")),
-      el("nav", {}, el("a", { href: "/" }, t.nav_calc), el("a", { href: "/pruzkum" }, t.nav_survey), el("a", { href: "/vysledky" }, t.nav_results), el("a", { href: "/metoda" }, t.nav_method),
+      el("nav", {}, [["/", t.nav_calc], ["/pruzkum", t.nav_survey], ["/vysledky", t.nav_results], ["/metoda", t.nav_method]].map(([href, label]) =>
+        el("a", { href, "aria-current": (location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/") === href) ? "page" : null }, label)),
         btn(lang === "cs" ? "English" : "Česky", () => { lang = lang === "cs" ? "en" : "cs"; ls.set("vk_lang", lang); draw(); })));
     document.querySelector("footer").replaceChildren(t.footer + " ", el("a", { href: "/soukromi" }, t.privacy));
     try { app.replaceChildren(...[].concat(await render()).flat(Infinity).filter(Boolean)); }
