@@ -3,24 +3,26 @@
 export const T = {
   cs: {
     brand: "Kalkulačka", nav_calc: "Kalkulačka", nav_survey: "Průzkum", nav_results: "Výsledky", nav_method: "Jak to funguje",
-    footer: "Prototyp. Postoje stran jsou předběžné.",
+    footer: "Prototyp. Postoje stran jsou předběžné. Uložené odpovědi slouží pouze pro výzkum.", privacy: "Ochrana osobních údajů",
+    research: "Odpovědi se ukládají jen s vaším souhlasem a slouží pouze pro výzkum. Neprodávají se a nepředávají politickým stranám ani inzerentům.",
     warn: "Předběžná data: postoje stran pocházejí z jejich odpovědí v roce 2025 a z několika zpráv v médiích. Vlastní kódování z programů a hlasování teprve vznikne.",
     more: "Více informací", start: "Začít", back: "Zpět", next: "Další", skip: "Přeskočit", of: "z",
     saving: "Ukládám…", saved: "Uloženo. Děkujeme.", err: "Uložení se nepodařilo. Zkuste to znovu.",
     keep: "Ponechat", change: "Změnit", unsure: "Nevím", answers: "odpovědí",
     agree: "souhlas", disagree: "nesouhlas", neutral: "nevím",
-    consent_note: "Ukládá se jen náhodný kód uložený ve vašem prohlížeči, odpovědi a datum. Neukládá se jméno, e-mail, IP adresa ani přesný čas. Díky kódu lze propojit vaše odpovědi z kalkulačky a z průzkumu. Své odpovědi můžete kdykoli smazat na stránce Jak to funguje.",
+    consent_note: "Ukládá se jen náhodný kód uložený ve vašem prohlížeči, odpovědi a datum. Neukládá se jméno, e-mail, IP adresa ani přesný čas. Díky kódu lze propojit vaše odpovědi z kalkulačky a z průzkumu. Své odpovědi můžete kdykoli smazat na stránce Jak to funguje. Data slouží pouze pro výzkum.",
     load_err: "Stránku se nepodařilo načíst."
   },
   en: {
     brand: "Calculator", nav_calc: "Calculator", nav_survey: "Survey", nav_results: "Results", nav_method: "How it works",
-    footer: "Prototype. Party positions are provisional.",
+    footer: "Prototype. Party positions are provisional. Saved answers are used for research only.", privacy: "Privacy notice",
+    research: "Answers are stored only with your consent and are used for research only. They are not sold or passed to political parties or advertisers.",
     warn: "Provisional data: party positions come from the parties' 2025 answers and a few news reports. Independent coding from programmes and votes is still to be done.",
     more: "More information", start: "Start", back: "Back", next: "Next", skip: "Skip", of: "of",
     saving: "Saving…", saved: "Saved. Thank you.", err: "Saving failed. Please try again.",
     keep: "Keep", change: "Change", unsure: "Not sure", answers: "answers",
     agree: "agree", disagree: "disagree", neutral: "not sure",
-    consent_note: "Only a random code kept in your browser, your answers and the date are stored. No name, e-mail, IP address or exact time is stored. The code links your calculator and survey answers. You can delete your answers at any time on the How it works page.",
+    consent_note: "Only a random code kept in your browser, your answers and the date are stored. No name, e-mail, IP address or exact time is stored. The code links your calculator and survey answers. You can delete your answers at any time on the How it works page. The data is used for research only.",
     load_err: "The page could not be loaded."
   }
 };
@@ -48,6 +50,7 @@ export function el(tag, attrs, ...kids) {
   return e;
 }
 export const btn = (label, onclick, cls) => el("button", { type: "button", class: cls || "", onclick }, label);
+export const privacyLink = () => el("a", { href: "/soukromi" }, T[lang].privacy);
 export const info = o => o.info ? el("details", { class: "info" }, el("summary", {}, T[lang].more), el("p", { class: "small" }, o.info[lang])) : null;
 export const pct = (a, b) => (b ? Math.round(100 * a / b) : 0);
 
@@ -98,7 +101,7 @@ export function mount(render) {
       el("a", { class: "brand", href: "/" }, t.brand, el("span", {}, "prototyp")),
       el("nav", {}, el("a", { href: "/" }, t.nav_calc), el("a", { href: "/pruzkum" }, t.nav_survey), el("a", { href: "/vysledky" }, t.nav_results), el("a", { href: "/metoda" }, t.nav_method),
         btn(lang === "cs" ? "English" : "Česky", () => { lang = lang === "cs" ? "en" : "cs"; ls.set("vk_lang", lang); draw(); })));
-    document.querySelector("footer").textContent = t.footer;
+    document.querySelector("footer").replaceChildren(t.footer + " ", el("a", { href: "/soukromi" }, t.privacy));
     try { app.replaceChildren(...[].concat(await render()).flat(Infinity).filter(Boolean)); }
     catch (e) { console.error(e); app.replaceChildren(el("div", { class: "note" }, t.load_err)); }
   };

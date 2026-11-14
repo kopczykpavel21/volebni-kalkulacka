@@ -1,6 +1,6 @@
 // Questionnaire 2: how the country should be governed. Works on its own; links to the
 // calculator answers through the same random respondent id when both are saved.
-import { T, lang, makeT, fmt, el, btn, info, loadData, api, respondentId, mount } from "./common.js";
+import { T, lang, makeT, fmt, el, btn, info, privacyLink, loadData, api, respondentId, mount } from "./common.js";
 
 const P = {
   cs: {
@@ -62,7 +62,7 @@ function vIntro() {
   go.disabled = !S.consent;
   return [el("h1", {}, t("h")), el("div", { class: "card" }, el("p", {}, t("p")),
     el("label", { class: "check" }, el("input", { type: "checkbox", checked: S.consent, onchange: e => { S.consent = e.target.checked; go.disabled = !S.consent; } }), t("consent")),
-    el("p", { class: "small muted" }, T[lang].consent_note), el("div", { class: "row" }, el("span"), go))];
+    el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()), el("div", { class: "row" }, el("span"), go))];
 }
 
 function vForm() {

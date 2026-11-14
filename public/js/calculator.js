@@ -1,5 +1,5 @@
 // Questionnaire 1: 25 statements, the match with each party, and the "said vs did" slider.
-import { T, lang, makeT, fmt, el, btn, info, loadData, api, respondentId, mount } from "./common.js";
+import { T, lang, makeT, fmt, el, btn, info, privacyLink, loadData, api, respondentId, mount } from "./common.js";
 
 const P = {
   cs: {
@@ -65,7 +65,8 @@ export function score(party, answers, weight) {
 
 function vIntro() {
   return [el("h1", {}, t("h")), el("div", { class: "card" }, el("p", {}, t("p")), el("div", { class: "row" }, btn(t("start"), () => { S.view = "q"; S.i = 0; draw(); }, "primary"))),
-    el("div", { class: "note" }, t("warn"))];
+    el("div", { class: "note" }, t("warn")),
+    el("p", { class: "small muted" }, T[lang].research, " ", privacyLink())];
 }
 
 function vQuestion() {
@@ -151,7 +152,7 @@ function vSave() {
   save.disabled = !S.consent || S.saved;
   return el("div", { class: "card" }, el("h2", { style: "margin-top:0" }, t("save_h")),
     el("label", { class: "check" }, el("input", { type: "checkbox", checked: S.consent, onchange: e => { S.consent = e.target.checked; save.disabled = !S.consent || S.saved; } }), t("save_c")),
-    el("p", { class: "small muted" }, T[lang].consent_note),
+    el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()),
     el("div", { class: "row" }, btn(t("again"), () => { Object.assign(S, { view: "q", i: 0, answers: {}, star: {}, saved: false }); draw(); }), el("span", {}, status, " ", save)),
     el("p", {}, el("a", { href: "/pruzkum" }, t("to_survey") + " →")));
 }

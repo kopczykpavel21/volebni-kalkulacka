@@ -98,7 +98,7 @@ test('analysis views work on real Postgres', async () => {
 });
 
 test('static pages and health', async () => {
-  for (const p of ['/', '/pruzkum', '/vysledky', '/metoda', '/admin', '/data/parties.json', '/js/common.js']) assert.equal((await fetch(base + p)).status, 200, p);
+  for (const p of ['/', '/pruzkum', '/vysledky', '/metoda', '/soukromi', '/admin', '/data/parties.json', '/js/common.js']) assert.equal((await fetch(base + p)).status, 200, p);
   assert.equal((await fetch(base + '/../package.json')).status, 404);
   assert.equal((await fetch(base + '/api/../lib/db')).status, 404);
   assert.equal((await call('/api/health')).body.ok, true);

@@ -16,7 +16,9 @@ The code runs. These points are about data and law, and code cannot settle them.
 Answers reveal political opinions, a special category under the GDPR. The design keeps them
 pseudonymous (random id, no IP address, no e-mail), which reduces risk but does not remove the duty to:
 
-- name who runs the site and how to contact them (a privacy notice);
+- name who runs the site and how to contact them: a draft notice is at `/soukromi`; fill in
+  `CONTROLLER` at the top of `public/js/privacy.js` and have the text reviewed;
+- keep the database in an EU region on Railway, so answers do not leave the EU;
 - collect explicit consent (the checkbox does this) and allow deletion (the "Smazat" button does this);
 - get ethics approval if the data is used for university research;
 - have a data protection officer or lawyer confirm the setup.
