@@ -1,0 +1,1422 @@
+{
+ "parties": [
+  {
+   "id": "ano",
+   "name": "ANO",
+   "color": "#3b4cc0",
+   "record": [
+    {
+     "cs": "Ve vládě 2014–2021 a znovu od prosince 2025; v obou obdobích vedlo ministerstvo financí.",
+     "en": "In government 2014–2021 and again since December 2025; held the finance ministry in both periods.",
+     "url": ""
+    },
+    {
+     "cs": "Demagog.cz: druhá Babišova vláda (ANO, ČSSD) porušila 15 z 50 sledovaných slibů.",
+     "en": "Demagog.cz: the second Babiš cabinet (ANO, ČSSD) broke 15 of 50 tracked promises.",
+     "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-vic-nesplnenych-slibu-nez-babis-co-fialova-vlada-dotahla-a-v-cem-selhala-286231"
+    },
+    {
+     "cs": "Rozpočet 2026 má schodek 310 mld. Kč. Národní rozpočtová rada uvádí, že odporuje zákonu o rozpočtové odpovědnosti; ministerstvo financí to odmítá.",
+     "en": "The 2026 budget has a 310 bn CZK deficit. The budget council says it breaks the fiscal responsibility law; the finance ministry disputes that.",
+     "url": "https://www.ceskenoviny.cz/index_view.php?id=2778891"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "6": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    },
+    "22": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors",
+     "acted": {
+      "v": 1,
+      "kind": "gov",
+      "cs": "Vláda, v níž strana sedí, v červnu 2026 schválila návrh zrušit poplatky a platit média ze státního rozpočtu.",
+      "en": "The government the party sits in approved a bill in June 2026 to abolish the fees and fund the media from the state budget.",
+      "url": "https://cnn.iprima.cz/vlada-schvalila-zruseni-koncesionarskych-poplatku-televizi-i-rozhlasu-se-snizi-rozpocet-514755"
+     }
+    },
+    "13": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "11": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "19": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "16": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "12": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "23": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "10": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "20": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "4": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "14": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "5": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "9": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors",
+     "acted": {
+      "v": 1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zrušení EET“: pro bylo 0 % poslanců klubu (0 z 50).",
+      "en": "Lower house 2021–2025, vote on abolishing EET: 0% of the club voted in favour (0 of 50).",
+      "url": ""
+     }
+    },
+    "18": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "21": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "24": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zavedení korespondenční volby“: pro bylo 2 % poslanců klubu (1 z 62).",
+      "en": "Lower house 2021–2025, vote on introducing postal voting: 2% of the club voted in favour (1 of 62).",
+      "url": ""
+     }
+    },
+    "7": {
+     "v": -1,
+     "basis": "news",
+     "url": "https://cnn.iprima.cz/vladu-ceka-jednani-o-rozpoctu-ctete-programove-prohlaseni-vzkazal-babis-kritikum-z-koalice-521072",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Poslanci strany v březnu 2026 hlasovali pro rozpočet se schodkem 310 mld. Kč.",
+      "en": "The party's deputies voted in March 2026 for a budget with a 310 bn CZK deficit.",
+      "url": "https://www.blesk.cz/clanek/834911"
+     }
+    },
+    "15": {
+     "v": -1,
+     "basis": "news",
+     "url": "https://cnn.iprima.cz/vladu-ceka-jednani-o-rozpoctu-ctete-programove-prohlaseni-vzkazal-babis-kritikum-z-koalice-521072"
+    },
+    "25": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://www.blesk.cz/clanek/zpravy-politika/825555/co-slibuje-babisova-vlada-uniklo-programove-prohlaseni-obsahuje-nezvysovani-dani-i-ne-euru.html"
+    }
+   }
+  },
+  {
+   "id": "spolu",
+   "name": "SPOLU (ODS, KDU-ČSL, TOP 09)",
+   "color": "#1f77b4",
+   "record": [
+    {
+     "cs": "Ve vládě prosinec 2021 – prosinec 2025; ODS měla premiéra i ministra financí. Tři strany zatím nejsou hodnoceny odděleně.",
+     "en": "In government December 2021 – December 2025; ODS held the premiership and the finance ministry. The three parties are not yet scored separately.",
+     "url": ""
+    },
+    {
+     "cs": "Demagog.cz: Fialova vláda splnila 16 z 50 sledovaných slibů, 14 částečně a 20 nesplnila.",
+     "en": "Demagog.cz: the Fiala cabinet fulfilled 16 of 50 tracked promises, 14 partly, and failed on 20.",
+     "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-vic-nesplnenych-slibu-nez-babis-co-fialova-vlada-dotahla-a-v-cem-selhala-286231"
+    },
+    {
+     "cs": "Strukturální schodek klesl z 3,3 % HDP (2021) na 1,7 % HDP (2024). Rozpočet 2025 byl plánován se schodkem 241 mld. Kč a skončil na 290,7 mld. Kč.",
+     "en": "The structural deficit fell from 3.3% of GDP (2021) to 1.7% (2024). The 2025 budget was planned at −241 bn CZK and ended at −290.7 bn CZK.",
+     "url": "https://mf.gov.cz/assets/attachments/2025-08-21_Makroekonomicka-predikce-srpen-2025.pdf"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "13": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "gov",
+      "cs": "Vláda, v níž strana byla, prosadila v roce 2024 reformu, která zvyšuje důchodový věk až na 67 let.",
+      "en": "The government the party was in passed the 2024 reform that raises the retirement age to as much as 67.",
+      "url": "https://ct24.ceskatelevize.cz/tema/vek-odchodu-do-duchodu-94792"
+     }
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "9": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zrušení EET“: pro bylo 100 % poslanců klubu (52 z 52).",
+      "en": "Lower house 2021–2025, vote on abolishing EET: 100% of the club voted in favour (52 of 52).",
+      "url": ""
+     }
+    },
+    "18": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": 1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zavedení korespondenční volby“: pro bylo 100 % poslanců klubu (56 z 56).",
+      "en": "Lower house 2021–2025, vote on introducing postal voting: 100% of the club voted in favour (56 of 56).",
+      "url": ""
+     }
+    },
+    "25": {
+     "v": -1,
+     "basis": "news",
+     "url": "https://ct24.ceskatelevize.cz/tema/pro-1658"
+    }
+   }
+  },
+  {
+   "id": "stan",
+   "name": "STAN",
+   "color": "#2ca02c",
+   "record": [
+    {
+     "cs": "Ve Fialově vládě 2021–2025 jako koaliční partner, bez ministerstva financí.",
+     "en": "Partner in the Fiala cabinet 2021–2025, without the finance ministry.",
+     "url": ""
+    },
+    {
+     "cs": "Demagog.cz hodnotí vládu jako celek: 16 z 50 slibů splněno, 20 nesplněno.",
+     "en": "Demagog.cz scores the cabinet as a whole: 16 of 50 promises fulfilled, 20 not.",
+     "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-vic-nesplnenych-slibu-nez-babis-co-fialova-vlada-dotahla-a-v-cem-selhala-286231"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "13": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "gov",
+      "cs": "Vláda, v níž strana byla, prosadila v roce 2024 reformu, která zvyšuje důchodový věk až na 67 let.",
+      "en": "The government the party was in passed the 2024 reform that raises the retirement age to as much as 67.",
+      "url": "https://ct24.ceskatelevize.cz/tema/vek-odchodu-do-duchodu-94792"
+     }
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "9": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zrušení EET“: pro bylo 100 % poslanců klubu (22 z 22).",
+      "en": "Lower house 2021–2025, vote on abolishing EET: 100% of the club voted in favour (22 of 22).",
+      "url": ""
+     }
+    },
+    "18": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": 1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zavedení korespondenční volby“: pro bylo 100 % poslanců klubu (31 z 31).",
+      "en": "Lower house 2021–2025, vote on introducing postal voting: 100% of the club voted in favour (31 of 31).",
+      "url": ""
+     }
+    },
+    "25": {
+     "v": -1,
+     "basis": "news",
+     "url": "https://ct24.ceskatelevize.cz/tema/pro-1658"
+    }
+   }
+  },
+  {
+   "id": "pirati",
+   "name": "Piráti",
+   "color": "#222222",
+   "record": [
+    {
+     "cs": "Ve Fialově vládě od prosince 2021 do podzimu 2024; započítává se jen tato doba.",
+     "en": "In the Fiala cabinet from December 2021 to autumn 2024; only that period counts.",
+     "url": ""
+    },
+    {
+     "cs": "Demagog.cz hodnotí vládu jako celek: 16 z 50 slibů splněno, 20 nesplněno.",
+     "en": "Demagog.cz scores the cabinet as a whole: 16 of 50 promises fulfilled, 20 not.",
+     "url": "https://www.seznamzpravy.cz/clanek/volby-do-poslanecke-snemovny-vic-nesplnenych-slibu-nez-babis-co-fialova-vlada-dotahla-a-v-cem-selhala-286231"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "13": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "9": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zrušení EET“: pro bylo 100 % poslanců klubu (3 z 3).",
+      "en": "Lower house 2021–2025, vote on abolishing EET: 100% of the club voted in favour (3 of 3).",
+      "url": ""
+     }
+    },
+    "18": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": 1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zavedení korespondenční volby“: pro bylo 100 % poslanců klubu (4 z 4).",
+      "en": "Lower house 2021–2025, vote on introducing postal voting: 100% of the club voted in favour (4 of 4).",
+      "url": ""
+     }
+    },
+    "25": {
+     "v": -1,
+     "basis": "news",
+     "url": "https://ct24.ceskatelevize.cz/tema/pro-1658"
+    }
+   }
+  },
+  {
+   "id": "spd",
+   "name": "SPD",
+   "color": "#8c564b",
+   "record": [
+    {
+     "cs": "Ve vládě od prosince 2025 (obrana, doprava, zemědělství). Záznam má 11 měsíců.",
+     "en": "In government since December 2025 (defence, transport, agriculture). The record covers 11 months.",
+     "url": ""
+    },
+    {
+     "cs": "Referendum o vystoupení z EU označovala za podmínku vstupu do vlády; při vzniku koalice od něj ustoupila (15 ze 108 koaličních mandátů).",
+     "en": "It called a referendum on leaving the EU a condition for governing and gave it up when the coalition formed (15 of 108 coalition seats).",
+     "url": "https://cnn.iprima.cz/okamura-programove-prohlaseni-je-z-99-program-spd-ustoupili-jsme-jen-v-jednom-bode-491525"
+    },
+    {
+     "cs": "Program žádal vyrovnané rozpočty v době růstu; poslanci hlasovali pro rozpočet se schodkem 310 mld. Kč.",
+     "en": "Its programme called for balanced budgets in growth years; its deputies voted for a budget with a 310 bn CZK deficit.",
+     "url": "https://plus.rozhlas.cz/petr-sabata-motoriste-a-spd-slibili-vyrovnane-rozpocty-ale-ministri-odhlasovali-9592858"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": 1,
+      "kind": "gov",
+      "cs": "Vláda, v níž strana sedí, v červnu 2026 schválila návrh zrušit poplatky a platit média ze státního rozpočtu.",
+      "en": "The government the party sits in approved a bill in June 2026 to abolish the fees and fund the media from the state budget.",
+      "url": "https://cnn.iprima.cz/vlada-schvalila-zruseni-koncesionarskych-poplatku-televizi-i-rozhlasu-se-snizi-rozpocet-514755"
+     }
+    },
+    "13": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "2": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party",
+     "acted": {
+      "v": 0,
+      "kind": "traded",
+      "cs": "Při vstupu do vlády ustoupila od referenda o vystoupení z EU; vládní program členství v EU potvrzuje.",
+      "en": "On joining the government it gave up the referendum on leaving the EU; the government programme confirms EU membership.",
+      "url": "https://cnn.iprima.cz/okamura-programove-prohlaseni-je-z-99-program-spd-ustoupili-jsme-jen-v-jednom-bode-491525"
+     }
+    },
+    "9": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zrušení EET“: pro bylo 100 % poslanců klubu (15 z 15).",
+      "en": "Lower house 2021–2025, vote on abolishing EET: 100% of the club voted in favour (15 of 15).",
+      "url": ""
+     }
+    },
+    "18": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Sněmovna 2021–2025, hlasování o návrhu „zavedení korespondenční volby“: pro bylo 0 % poslanců klubu (0 z 15).",
+      "en": "Lower house 2021–2025, vote on introducing postal voting: 0% of the club voted in favour (0 of 15).",
+      "url": ""
+     }
+    },
+    "7": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://plus.rozhlas.cz/petr-sabata-motoriste-a-spd-slibili-vyrovnane-rozpocty-ale-ministri-odhlasovali-9592858",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Poslanci strany v březnu 2026 hlasovali pro rozpočet se schodkem 310 mld. Kč.",
+      "en": "The party's deputies voted in March 2026 for a budget with a 310 bn CZK deficit.",
+      "url": "https://www.blesk.cz/clanek/834911"
+     }
+    },
+    "15": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://cnn.iprima.cz/vladu-ceka-jednani-o-rozpoctu-ctete-programove-prohlaseni-vzkazal-babis-kritikum-z-koalice-521072"
+    },
+    "25": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://www.blesk.cz/clanek/zpravy-politika/825555/co-slibuje-babisova-vlada-uniklo-programove-prohlaseni-obsahuje-nezvysovani-dani-i-ne-euru.html"
+    }
+   }
+  },
+  {
+   "id": "motoriste",
+   "name": "Motoristé",
+   "color": "#d62728",
+   "record": [
+    {
+     "cs": "Ve vládě od prosince 2025 (zahraničí, kultura, sport, dočasně životní prostředí). Záznam má 11 měsíců.",
+     "en": "In government since December 2025 (foreign affairs, culture, sport, environment temporarily). The record covers 11 months.",
+     "url": ""
+    },
+    {
+     "cs": "Slibovali schodek 225 mld. Kč v roce 2026 a vyrovnaný rozpočet do čtyř let; jejich ministři a poslanci schválili schodek 310 mld. Kč.",
+     "en": "They promised a 225 bn CZK deficit in 2026 and balance within four years; their ministers and deputies approved a 310 bn CZK deficit.",
+     "url": "https://plus.rozhlas.cz/petr-sabata-motoriste-a-spd-slibili-vyrovnane-rozpocty-ale-ministri-odhlasovali-9592858"
+    },
+    {
+     "cs": "U návrhu rozpočtu 2027 žádali snížení schodku o 20 mld. Kč; schválený návrh má schodek 386 mld. Kč.",
+     "en": "They asked for a 20 bn CZK cut to the 2027 draft; the approved draft has a 386 bn CZK deficit.",
+     "url": "https://cnn.iprima.cz/vlada-schvalila-navrh-statniho-rozpoctu-522348"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party",
+     "acted": {
+      "v": 1,
+      "kind": "gov",
+      "cs": "Vláda, v níž strana sedí, v červnu 2026 schválila návrh zrušit poplatky a platit média ze státního rozpočtu.",
+      "en": "The government the party sits in approved a bill in June 2026 to abolish the fees and fund the media from the state budget.",
+      "url": "https://cnn.iprima.cz/vlada-schvalila-zruseni-koncesionarskych-poplatku-televizi-i-rozhlasu-se-snizi-rozpocet-514755"
+     }
+    },
+    "13": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "9": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "18": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "7": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://plus.rozhlas.cz/petr-sabata-motoriste-a-spd-slibili-vyrovnane-rozpocty-ale-ministri-odhlasovali-9592858",
+     "acted": {
+      "v": -1,
+      "kind": "vote",
+      "cs": "Poslanci strany v březnu 2026 hlasovali pro rozpočet se schodkem 310 mld. Kč.",
+      "en": "The party's deputies voted in March 2026 for a budget with a 310 bn CZK deficit.",
+      "url": "https://www.blesk.cz/clanek/834911"
+     }
+    },
+    "25": {
+     "v": 1,
+     "basis": "news",
+     "url": "https://www.blesk.cz/clanek/zpravy-politika/825555/co-slibuje-babisova-vlada-uniklo-programove-prohlaseni-obsahuje-nezvysovani-dani-i-ne-euru.html"
+    }
+   }
+  },
+  {
+   "id": "stacilo",
+   "name": "Stačilo! (s KSČM)",
+   "color": "#7f0000",
+   "record": [
+    {
+     "cs": "Bez účasti ve vládě. KSČM tolerovala menšinovou vládu 2018–2021. Ve volbách 2025 získalo 4,30 % a žádný mandát.",
+     "en": "No cabinet seats. KSČM tolerated the 2018–2021 minority cabinet. Won 4.30% and no seats in 2025.",
+     "url": ""
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "6": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    },
+    "22": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    },
+    "13": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "11": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "19": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "16": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "12": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "23": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "10": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "20": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "4": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "14": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "3": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "5": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    },
+    "2": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "9": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "18": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "21": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "editors"
+    },
+    "24": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "editors"
+    }
+   }
+  },
+  {
+   "id": "prisaha",
+   "name": "Přísaha",
+   "color": "#17becf",
+   "record": [
+    {
+     "cs": "Žádný vládní záznam. Hnutí nikdy nemělo poslance ani ministra; ve volbách 2025 získalo 1,07 %.",
+     "en": "No governing record. The movement has never had a deputy or a minister; it won 1.07% in 2025.",
+     "url": "https://www.seznamzpravy.cz/tag/hnuti-prisaha-58057"
+    }
+   ],
+   "positions": {
+    "1": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "6": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "22": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "13": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "11": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "19": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "16": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "12": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "23": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "10": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "17": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "20": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "4": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "14": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "3": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "5": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "8": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    },
+    "2": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "9": {
+     "v": 1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "18": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "21": {
+     "v": -1,
+     "basis": "archive",
+     "flipped": false,
+     "filled_by": "party"
+    },
+    "24": {
+     "v": 0,
+     "basis": "archive",
+     "flipped": true,
+     "filled_by": "party"
+    }
+   }
+  }
+ ],
+ "uncoded": [
+  {
+   "name": "SOCDEM",
+   "cs": "Zatím nezakódováno: v roce 2025 kandidovala na listině Stačilo!.",
+   "en": "Not yet coded: ran on the Stačilo! list in 2025."
+  },
+  {
+   "name": "Zelení",
+   "cs": "Zatím nezakódováno: v roce 2025 kandidovali na listině Pirátů.",
+   "en": "Not yet coded: ran on the Piráti list in 2025."
+  }
+ ]
+}

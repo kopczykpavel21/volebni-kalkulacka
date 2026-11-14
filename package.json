@@ -1,0 +1,14 @@
+{
+  "name": "volebni-kalkulacka",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Voting calculator and governance survey for Czechia: static front end, serverless API, Postgres.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev-server.js",
+    "test": "node --test test/*.test.js",
+    "db:schema": "node scripts/migrate.js"
+  },
+  "dependencies": { "pg": "^8.13.0" }
+}

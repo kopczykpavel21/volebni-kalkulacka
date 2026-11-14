@@ -1,0 +1,826 @@
+{
+ "blocks": {
+  "A": {
+   "cs": "Jak se rozhoduje",
+   "en": "How decisions are made"
+  },
+  "B": {
+   "cs": "Kdo rozhoduje: obec, kraj, stát, EU",
+   "en": "Who decides: municipality, region, state, EU"
+  },
+  "C": {
+   "cs": "Veřejné peníze",
+   "en": "Public money"
+  },
+  "D": {
+   "cs": "Jak funguje stát",
+   "en": "How the state works"
+  },
+  "E": {
+   "cs": "Občané a dlouhodobý výhled",
+   "en": "Citizens and the long term"
+  }
+ },
+ "areas": {
+  "cs": [
+   "důchody",
+   "zdravotnictví",
+   "školství",
+   "obrana",
+   "bydlení",
+   "doprava",
+   "věda a výzkum",
+   "životní prostředí",
+   "bezpečnost a policie",
+   "splácení dluhu"
+  ],
+  "en": [
+   "pensions",
+   "health care",
+   "education",
+   "defence",
+   "housing",
+   "transport",
+   "science and research",
+   "environment",
+   "security and police",
+   "debt repayment"
+  ]
+ },
+ "questions": [
+  {
+   "id": 1,
+   "block": "A",
+   "type": "kc",
+   "cs": {
+    "q": "Senát může zákony schválené Sněmovnou vrátit nebo zdržet.",
+    "o": [
+     "Senát zrušit",
+     "Dát Senátu více pravomocí",
+     "Změnit způsob volby senátorů"
+    ]
+   },
+   "en": {
+    "q": "The Senate can return or delay laws passed by the lower house.",
+    "o": [
+     "Abolish the Senate",
+     "Give the Senate more powers",
+     "Change how senators are elected"
+    ]
+   },
+   "info": {
+    "cs": "Senát má 81 členů volených na šest let. Jeho veto u běžných zákonů může Sněmovna přehlasovat 101 hlasy; ústavní zákony bez Senátu přijmout nelze.",
+    "en": "The Senate has 81 members elected for six years. The lower house can override its veto on ordinary laws with 101 votes; constitutional laws cannot pass without the Senate."
+   }
+  },
+  {
+   "id": 2,
+   "block": "A",
+   "type": "kc",
+   "cs": {
+    "q": "Prezidenta volí přímo občané.",
+    "o": [
+     "Vrátit volbu parlamentu",
+     "Dát prezidentovi více pravomocí",
+     "Dát prezidentovi méně pravomocí"
+    ]
+   },
+   "en": {
+    "q": "The president is elected directly by citizens.",
+    "o": [
+     "Return the election to parliament",
+     "Give the president more powers",
+     "Give the president fewer powers"
+    ]
+   },
+   "info": {
+    "cs": "Přímá volba platí od roku 2013, dříve prezidenta volil parlament. Prezident jmenuje premiéra, soudce a vedení centrální banky a může vetovat zákony.",
+    "en": "Direct election has applied since 2013; before that parliament elected the president. The president appoints the prime minister, judges and the central bank board, and can veto laws."
+   }
+  },
+  {
+   "id": 3,
+   "block": "A",
+   "type": "kc",
+   "cs": {
+    "q": "Poslanci se volí poměrným systémem s pětiprocentní hranicí.",
+    "o": [
+     "Snížit hranici",
+     "Zvýšit hranici",
+     "Volit poslance v jednomandátových obvodech"
+    ]
+   },
+   "en": {
+    "q": "Deputies are elected proportionally with a 5% threshold.",
+    "o": [
+     "Lower the threshold",
+     "Raise the threshold",
+     "Elect deputies in single-member districts"
+    ]
+   },
+   "info": {
+    "cs": "Poměrný systém dává stranám křesla podle podílu hlasů. Nižší hranice pustí do Sněmovny více malých stran; většinový systém obvykle vede k jasnější většině, ale méně názorů má zastoupení.",
+    "en": "A proportional system gives parties seats by their share of votes. A lower threshold lets in more small parties; a majority system usually gives a clearer majority, but fewer views are represented."
+   }
+  },
+  {
+   "id": 4,
+   "block": "A",
+   "type": "kc",
+   "cs": {
+    "q": "Občané nemohou vyvolat celostátní referendum.",
+    "o": [
+     "Umožnit ho u domácích zákonů",
+     "Umožnit ho i u mezinárodních smluv",
+     "Umožnit jen poradní hlasování"
+    ]
+   },
+   "en": {
+    "q": "Citizens cannot call a nationwide referendum.",
+    "o": [
+     "Allow it on domestic laws",
+     "Allow it also on international treaties",
+     "Allow advisory votes only"
+    ]
+   },
+   "info": {
+    "cs": "Celostátní referendum se konalo jen jednou, v roce 2003. Místní a krajská referenda existují; pro celostátní by bylo třeba přijmout ústavní zákon.",
+    "en": "A nationwide referendum has been held only once, in 2003. Local and regional referendums exist; a nationwide one would need a constitutional law."
+   }
+  },
+  {
+   "id": 5,
+   "block": "A",
+   "type": "kc",
+   "cs": {
+    "q": "Poslanci a senátoři mohou být zvoleni neomezeně mnohokrát.",
+    "o": [
+     "Omezit počet volebních období",
+     "Umožnit voličům odvolání",
+     "Zavést horní věkovou hranici"
+    ]
+   },
+   "en": {
+    "q": "Deputies and senators can serve any number of terms.",
+    "o": [
+     "Limit the number of terms",
+     "Let voters recall them",
+     "Set an upper age limit"
+    ]
+   },
+   "info": {
+    "cs": "Omezení dnes platí jen pro prezidenta: nejvýše dvě období po sobě. Zastánci limitů chtějí obměnu, odpůrci namítají, že o tom mají rozhodovat voliči.",
+    "en": "A limit applies today only to the president: at most two consecutive terms. Supporters of limits want turnover, opponents say voters should decide."
+   }
+  },
+  {
+   "id": 6,
+   "block": "B",
+   "type": "kc",
+   "cs": {
+    "q": "Každá z asi 6 250 obcí, i ta nejmenší, má vlastní zastupitelstvo a úřad.",
+    "o": [
+     "Stát má finančně zvýhodnit obce, které se dobrovolně sloučí",
+     "Stát má sloučení nejmenších obcí nařídit",
+     "Obce zůstanou samostatné, ale úřední práci budou dělat společně"
+    ]
+   },
+   "en": {
+    "q": "Each of the roughly 6,250 municipalities, even the smallest, has its own council and office.",
+    "o": [
+     "The state should reward municipalities that merge voluntarily",
+     "The state should order the smallest municipalities to merge",
+     "Municipalities stay separate but do their office work together"
+    ]
+   },
+   "info": {
+    "cs": "Zhruba tři čtvrtiny obcí mají méně než 1 000 obyvatel. Malé obce jsou blízko lidem, ale hůř shánějí odborníky a peníze na větší investice.",
+    "en": "Roughly three quarters of municipalities have fewer than 1,000 inhabitants. Small municipalities are close to people but find it harder to get experts and money for larger investments."
+   }
+  },
+  {
+   "id": 7,
+   "block": "B",
+   "type": "kc",
+   "cs": {
+    "q": "Existuje 14 krajů s vlastními zastupitelstvy.",
+    "o": [
+     "Méně větších krajů",
+     "Kraje zrušit",
+     "Dát krajům více pravomocí a peněz"
+    ]
+   },
+   "en": {
+    "q": "There are 14 regions with their own assemblies.",
+    "o": [
+     "Fewer, larger regions",
+     "Abolish regions",
+     "Give regions more powers and money"
+    ]
+   },
+   "info": {
+    "cs": "Kraje vznikly v roce 2000. Spravují hlavně střední školy, nemocnice, silnice nižších tříd a regionální dopravu.",
+    "en": "The regions were created in 2000. They mainly run secondary schools, hospitals, lower-class roads and regional transport."
+   }
+  },
+  {
+   "id": 8,
+   "block": "B",
+   "type": "kc",
+   "cs": {
+    "q": "Obce dostávají pevný podíl z celostátních daní.",
+    "o": [
+     "Větší podíl obcím",
+     "Větší podíl státu",
+     "Více vlastních místních daní pro obce"
+    ]
+   },
+   "en": {
+    "q": "Municipalities receive a fixed share of national taxes.",
+    "o": [
+     "A larger share for municipalities",
+     "A larger share for the state",
+     "More local taxes set by municipalities"
+    ]
+   },
+   "info": {
+    "cs": "Podíl obcí určuje zákon o rozpočtovém určení daní. Vlastní místní daně a poplatky tvoří jen malou část jejich příjmů.",
+    "en": "The municipal share is set by the law on the distribution of taxes. Local taxes and fees of their own make up only a small part of municipal income."
+   }
+  },
+  {
+   "id": 9,
+   "block": "B",
+   "type": "kc",
+   "cs": {
+    "q": "O některých věcech se rozhoduje společně v Evropské unii.",
+    "o": [
+     "Přesunout více rozhodnutí na EU",
+     "Vrátit rozhodnutí státu",
+     "Zachovat rozdělení, ale častěji využívat veto"
+    ]
+   },
+   "en": {
+    "q": "Some decisions are taken jointly in the European Union.",
+    "o": [
+     "Move more decisions to the EU",
+     "Return decisions to the state",
+     "Keep the balance but use the veto more often"
+    ]
+   },
+   "info": {
+    "cs": "Společně se rozhoduje například o obchodu, zemědělství a pravidlech jednotného trhu. V daních, obraně a zahraniční politice má každý stát právo veta.",
+    "en": "Joint decisions cover trade, agriculture and single-market rules, for example. In taxes, defence and foreign policy every state has a veto."
+   }
+  },
+  {
+   "id": 10,
+   "block": "B",
+   "type": "kc",
+   "cs": {
+    "q": "Vysocí úředníci se vybírají podle zákona o státní službě.",
+    "o": [
+     "Více politického výběru ministry",
+     "Větší nezávislost na ministrech",
+     "Snazší odvolání za špatné výsledky"
+    ]
+   },
+   "en": {
+    "q": "Senior officials are chosen under the civil service law.",
+    "o": [
+     "More political choice by ministers",
+     "More independence from ministers",
+     "Easier dismissal for poor results"
+    ]
+   },
+   "info": {
+    "cs": "Zákon o státní službě platí od roku 2015 a má oddělit úředníky od politických změn. Zastánci větší volnosti pro ministry mluví o pružnosti, odpůrci o riziku dosazování známých.",
+    "en": "The civil service law has applied since 2015 and is meant to shield officials from political change. Supporters of more freedom for ministers speak of flexibility, opponents of the risk of appointing friends."
+   }
+  },
+  {
+   "id": 11,
+   "block": "C",
+   "type": "kc",
+   "cs": {
+    "q": "Zákon omezuje, jak velký smí být strukturální schodek.",
+    "o": [
+     "Zapsat přísnější limit do ústavy",
+     "Vyjmout z limitu investice",
+     "Limit zrušit"
+    ]
+   },
+   "en": {
+    "q": "A law limits how large the structural deficit may be.",
+    "o": [
+     "Write a stricter limit into the constitution",
+     "Exempt investment from the limit",
+     "Remove the limit"
+    ]
+   },
+   "info": {
+    "cs": "Zákon o rozpočtové odpovědnosti platí od roku 2017; pro rok 2026 povoluje strukturální schodek nejvýše 1,75 % HDP. Při dluhu nad 55 % HDP nastupuje dluhová brzda; koncem roku 2025 byl dluh 44,2 % HDP.",
+    "en": "The fiscal responsibility law has applied since 2017; for 2026 it allows a structural deficit of at most 1.75% of GDP. A debt brake starts above 55% of GDP; at the end of 2025 debt was 44.2% of GDP."
+   }
+  },
+  {
+   "id": 12,
+   "block": "C",
+   "type": "kc",
+   "cs": {
+    "q": "Když rozpočet nevychází, vlády si většinou půjčují.",
+    "o": [
+     "Nejdřív zvýšit daně",
+     "Nejdřív snížit výdaje",
+     "Půjčovat si jen na investice"
+    ]
+   },
+   "en": {
+    "q": "When the budget does not add up, governments mostly borrow.",
+    "o": [
+     "Raise taxes first",
+     "Cut spending first",
+     "Borrow only for investment"
+    ]
+   },
+   "info": {
+    "cs": "Státní dluh na konci roku 2025 činil 3 678 mld. Kč. Půjčky odkládají placení na později a zvyšují výdaje na úroky.",
+    "en": "State debt was 3,678 bn CZK at the end of 2025. Borrowing postpones payment and raises interest costs."
+   }
+  },
+  {
+   "id": 13,
+   "block": "C",
+   "type": "pick",
+   "max": 3,
+   "opts": "areas",
+   "cs": {
+    "q": "Které tři oblasti mají dostat více veřejných peněz?"
+   },
+   "en": {
+    "q": "Which three areas should get more public money?"
+   },
+   "info": {
+    "cs": "Největší položkou státního rozpočtu jsou důchody. Více peněz v jedné oblasti znamená méně jinde, vyšší daně nebo vyšší dluh.",
+    "en": "Pensions are the largest item of the state budget. More money in one area means less elsewhere, higher taxes or more debt."
+   }
+  },
+  {
+   "id": 14,
+   "block": "C",
+   "type": "pick",
+   "max": 3,
+   "opts": "areas",
+   "cs": {
+    "q": "Které tři oblasti mají dostat méně?"
+   },
+   "en": {
+    "q": "Which three areas should get less?"
+   },
+   "info": {
+    "cs": "Zkuste vybrat oblasti, kde byste omezení skutečně přijali. Bez úspor nebo vyšších příjmů nelze jinde přidat.",
+    "en": "Try to choose areas where you would really accept cuts. Without savings or higher revenue, nothing can be added elsewhere."
+   }
+  },
+  {
+   "id": 15,
+   "block": "C",
+   "type": "kc",
+   "cs": {
+    "q": "Důchody se vyplácejí z odvodů dnešních pracujících.",
+    "o": [
+     "Zvýšit věk odchodu do důchodu",
+     "Zvýšit odvody",
+     "Snížit nové důchody vůči mzdám",
+     "Přidat povinné vlastní spoření"
+    ]
+   },
+   "en": {
+    "q": "Pensions are paid from the contributions of today's workers.",
+    "o": [
+     "Raise the retirement age",
+     "Raise contributions",
+     "Lower new pensions relative to wages",
+     "Add mandatory personal savings"
+    ]
+   },
+   "info": {
+    "cs": "Systém je průběžný: dnešní pracující platí dnešní důchodce. Populace stárne, takže na jednoho důchodce bude připadat méně pracujících.",
+    "en": "The system is pay-as-you-go: today's workers pay today's pensioners. The population is ageing, so there will be fewer workers per pensioner."
+   }
+  },
+  {
+   "id": 16,
+   "block": "D",
+   "type": "kc",
+   "cs": {
+    "q": "Většinu věcí na úřadech lze stále vyřídit osobně nebo na papíře.",
+    "o": [
+     "Online jako výchozí možnost, s pomocí pro ty, kdo ji potřebují",
+     "Zachovat plnou papírovou obsluhu",
+     "Jedno místo pro všechna vyřízení"
+    ]
+   },
+   "en": {
+    "q": "Most dealings with offices can still be done in person or on paper.",
+    "o": [
+     "Online by default, with help for those who need it",
+     "Keep full paper service",
+     "One office for everything"
+    ]
+   },
+   "info": {
+    "cs": "Zákon o právu na digitální služby dává lidem nárok vyřídit věci online. Část lidí, hlavně starších, ale internet nepoužívá.",
+    "en": "The law on the right to digital services entitles people to deal with offices online. Some people, mainly older ones, do not use the internet."
+   }
+  },
+  {
+   "id": 17,
+   "block": "D",
+   "type": "kc",
+   "cs": {
+    "q": "Počet ministerstev a státních zaměstnanců.",
+    "o": [
+     "Méně ministerstev",
+     "Méně zaměstnanců s vyšším platem",
+     "Více lidí tam, kde chybějí"
+    ]
+   },
+   "en": {
+    "q": "The number of ministries and state employees.",
+    "o": [
+     "Fewer ministries",
+     "Fewer employees with higher pay",
+     "More staff where services are short"
+    ]
+   },
+   "info": {
+    "cs": "Méně úředníků může ušetřit, ale některé služby, například stavební úřady nebo soudy, se potýkají s nedostatkem lidí.",
+    "en": "Fewer officials can save money, but some services, such as building offices or courts, are short of staff."
+   }
+  },
+  {
+   "id": 18,
+   "block": "D",
+   "type": "kc",
+   "cs": {
+    "q": "Soudy a státní zastupitelství.",
+    "o": [
+     "Pevné lhůty pro rozhodnutí",
+     "Větší nezávislost nejvyššího státního zástupce",
+     "Více soudců a personálu"
+    ]
+   },
+   "en": {
+    "q": "Courts and prosecutors.",
+    "o": [
+     "Fixed deadlines for rulings",
+     "More independence for the chief prosecutor",
+     "More judges and staff"
+    ]
+   },
+   "info": {
+    "cs": "Nejvyššího státního zástupce jmenuje vláda. Délka řízení se mezi soudy výrazně liší.",
+    "en": "The government appoints the chief prosecutor. The length of proceedings differs widely between courts."
+   }
+  },
+  {
+   "id": 19,
+   "block": "D",
+   "type": "kc",
+   "cs": {
+    "q": "Na veřejnoprávní televizi a rozhlas dohlížejí rady volené parlamentem.",
+    "o": [
+     "Rady vybírané občanskými a profesními organizacemi",
+     "Přímé řízení státem",
+     "Instituce sloučit nebo zmenšit"
+    ]
+   },
+   "en": {
+    "q": "Public television and radio are overseen by councils elected by parliament.",
+    "o": [
+     "Councils chosen by civic and professional bodies",
+     "Direct state control",
+     "Merge or shrink the institutions"
+    ]
+   },
+   "info": {
+    "cs": "Členy rad České televize a Českého rozhlasu volí Sněmovna a Senát. Rady volí a odvolávají ředitele.",
+    "en": "Members of the councils of Czech Television and Czech Radio are elected by the lower house and the Senate. The councils elect and dismiss the directors."
+   }
+  },
+  {
+   "id": 20,
+   "block": "D",
+   "type": "kc",
+   "cs": {
+    "q": "Politici mohou vlastnit firmy, které dostávají veřejné peníze, pokud dodrží pravidla o střetu zájmů.",
+    "o": [
+     "Zakázat vlastnictví po dobu funkce",
+     "Vyžadovat nezávislou správu majetku",
+     "Pravidla uvolnit"
+    ]
+   },
+   "en": {
+    "q": "Politicians may own companies that receive public money, under conflict-of-interest rules.",
+    "o": [
+     "Ban ownership while in office",
+     "Require independent management of the assets",
+     "Relax the rules"
+    ]
+   },
+   "info": {
+    "cs": "Zákon o střetu zájmů zakazuje firmám, v nichž má člen vlády aspoň čtvrtinový podíl, získávat dotace a veřejné zakázky. Spor je o to, zda stačí převod majetku do svěřenského fondu.",
+    "en": "The conflict-of-interest law bars companies in which a cabinet member holds at least a quarter from subsidies and public contracts. The dispute is whether moving assets into a trust fund is enough."
+   }
+  },
+  {
+   "id": 21,
+   "block": "E",
+   "type": "kc",
+   "cs": {
+    "q": "Občané se podílejí hlavně volbami jednou za čtyři roky.",
+    "o": [
+     "Občanská shromáždění k zásadním zákonům",
+     "Celostátní participativní rozpočet",
+     "Závazné petice"
+    ]
+   },
+   "en": {
+    "q": "Citizens take part mainly by voting every four years.",
+    "o": [
+     "Citizens' assemblies on major laws",
+     "A national participatory budget",
+     "Binding petitions"
+    ]
+   },
+   "info": {
+    "cs": "Občanská shromáždění losovaných občanů se osvědčila například v Irsku. Participativní rozpočty už používá řada českých měst.",
+    "en": "Citizens' assemblies of randomly chosen people have worked in Ireland, for example. Many Czech towns already use participatory budgets."
+   }
+  },
+  {
+   "id": 22,
+   "block": "E",
+   "type": "kc",
+   "cs": {
+    "q": "Volí se osobně a na papíře; ze zahraničí lze volit korespondenčně.",
+    "o": [
+     "Volby přes internet",
+     "Korespondenční volba i uvnitř země",
+     "Volební právo od 16 let",
+     "Jen osobní hlasování"
+    ]
+   },
+   "en": {
+    "q": "Voting is in person on paper, with postal voting from abroad.",
+    "o": [
+     "Online voting",
+     "Postal voting inside the country too",
+     "Voting from age 16",
+     "In-person voting only"
+    ]
+   },
+   "info": {
+    "cs": "Přes internet se volí například v Estonsku, od 16 let například v Rakousku. Kritici online voleb upozorňují na bezpečnost a tajnost hlasování.",
+    "en": "Online voting is used in Estonia, for example, and voting from 16 in Austria. Critics of online voting point to security and ballot secrecy."
+   }
+  },
+  {
+   "id": 23,
+   "block": "E",
+   "type": "pick",
+   "max": 3,
+   "cs": {
+    "q": "Podle čeho se má vláda hodnotit za deset let? Vyberte tři.",
+    "o": [
+     "reálné mzdy",
+     "dostupné bydlení",
+     "čekací doby ve zdravotnictví",
+     "bezpečnost",
+     "stav životního prostředí",
+     "veřejný dluh",
+     "kvalita škol"
+    ]
+   },
+   "en": {
+    "q": "In ten years, what should a government be judged on? Choose three.",
+    "o": [
+     "real wages",
+     "affordable housing",
+     "waiting times in health care",
+     "security",
+     "state of the environment",
+     "public debt",
+     "quality of schools"
+    ]
+   },
+   "info": {
+    "cs": "Neexistuje správná odpověď. Výběr ukazuje, co je pro vás měřítkem dobrého vládnutí.",
+    "en": "There is no right answer. Your choice shows what you take as the measure of good government."
+   }
+  },
+  {
+   "id": 24,
+   "block": "E",
+   "type": "single",
+   "cs": {
+    "q": "Kdo má mít poslední slovo v odborných otázkách, jako je energetika nebo důchody?",
+    "o": [
+     "Zvolení politici",
+     "Nezávislé odborné instituce",
+     "Občané v referendu"
+    ]
+   },
+   "en": {
+    "q": "Who should have the final say on technical questions such as energy or pensions?",
+    "o": [
+     "Elected politicians",
+     "Independent expert bodies",
+     "Citizens in a referendum"
+    ]
+   },
+   "info": {
+    "cs": "Příklad: úrokové sazby dnes neurčují politici, ale nezávislá Česká národní banka.",
+    "en": "An example: interest rates today are set not by politicians but by the independent Czech National Bank."
+   }
+  },
+  {
+   "id": 25,
+   "block": "E",
+   "type": "open",
+   "cs": {
+    "q": "Otevřená otázka",
+    "o": [
+     "Jednu věc bych změnil(a) jako první:",
+     "Jedna věc se nesmí změnit nikdy:"
+    ]
+   },
+   "en": {
+    "q": "Open question",
+    "o": [
+     "One thing I would change first:",
+     "One thing that must never change:"
+    ]
+   }
+  }
+ ],
+ "background": [
+  {
+   "id": "age",
+   "cs": {
+    "q": "Věk",
+    "o": [
+     "18–29",
+     "30–44",
+     "45–59",
+     "60+"
+    ]
+   },
+   "en": {
+    "q": "Age",
+    "o": [
+     "18–29",
+     "30–44",
+     "45–59",
+     "60+"
+    ]
+   }
+  },
+  {
+   "id": "gender",
+   "cs": {
+    "q": "Pohlaví",
+    "o": [
+     "žena",
+     "muž",
+     "jiné / neuvádím"
+    ]
+   },
+   "en": {
+    "q": "Gender",
+    "o": [
+     "woman",
+     "man",
+     "other / prefer not to say"
+    ]
+   }
+  },
+  {
+   "id": "edu",
+   "cs": {
+    "q": "Nejvyšší dosažené vzdělání",
+    "o": [
+     "základní",
+     "vyučen(a)",
+     "maturita",
+     "vysokoškolské"
+    ]
+   },
+   "en": {
+    "q": "Highest education",
+    "o": [
+     "primary",
+     "vocational",
+     "secondary with exam",
+     "university"
+    ]
+   }
+  },
+  {
+   "id": "region",
+   "cs": {
+    "q": "Kraj",
+    "o": [
+     "Praha",
+     "Středočeský",
+     "Jihočeský",
+     "Plzeňský",
+     "Karlovarský",
+     "Ústecký",
+     "Liberecký",
+     "Královéhradecký",
+     "Pardubický",
+     "Vysočina",
+     "Jihomoravský",
+     "Olomoucký",
+     "Zlínský",
+     "Moravskoslezský"
+    ]
+   },
+   "en": {
+    "q": "Region",
+    "o": [
+     "Praha",
+     "Středočeský",
+     "Jihočeský",
+     "Plzeňský",
+     "Karlovarský",
+     "Ústecký",
+     "Liberecký",
+     "Královéhradecký",
+     "Pardubický",
+     "Vysočina",
+     "Jihomoravský",
+     "Olomoucký",
+     "Zlínský",
+     "Moravskoslezský"
+    ]
+   }
+  },
+  {
+   "id": "size",
+   "cs": {
+    "q": "Velikost obce",
+    "o": [
+     "do 2 000",
+     "2 000–19 999",
+     "20 000–99 999",
+     "100 000 a více"
+    ]
+   },
+   "en": {
+    "q": "Size of municipality",
+    "o": [
+     "under 2,000",
+     "2,000–19,999",
+     "20,000–99,999",
+     "100,000 or more"
+    ]
+   }
+  },
+  {
+   "id": "vote",
+   "cs": {
+    "q": "Koho jste volil(a) v roce 2025?",
+    "o": [
+     "ANO",
+     "SPOLU",
+     "STAN",
+     "Piráti",
+     "SPD",
+     "Motoristé",
+     "Stačilo!",
+     "jiná strana",
+     "nevolil(a) jsem",
+     "neuvádím"
+    ]
+   },
+   "en": {
+    "q": "Who did you vote for in 2025?",
+    "o": [
+     "ANO",
+     "SPOLU",
+     "STAN",
+     "Piráti",
+     "SPD",
+     "Motoristé",
+     "Stačilo!",
+     "another party",
+     "did not vote",
+     "prefer not to say"
+    ]
+   }
+  }
+ ]
+}

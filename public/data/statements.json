@@ -1,0 +1,252 @@
+[
+ {
+  "id": 1,
+  "topic": "eu",
+  "cs": "Česko má v dohledné době přijmout euro.",
+  "en": "Czechia should adopt the euro in the foreseeable future.",
+  "info": {
+   "cs": "Česko se při vstupu do EU v roce 2004 zavázalo euro přijmout, termín ale stanoven není. Zastánci uvádějí konec kurzového rizika a nákladů na směnu, odpůrci ztrátu vlastní měnové politiky.",
+   "en": "Czechia committed to adopting the euro when it joined the EU in 2004, but no date is set. Supporters point to the end of exchange-rate risk and conversion costs, opponents to the loss of an independent monetary policy."
+  }
+ },
+ {
+  "id": 2,
+  "topic": "eu",
+  "cs": "Česko má vystoupit z Evropské unie.",
+  "en": "Czechia should leave the European Union.",
+  "info": {
+   "cs": "Česko je členem EU od roku 2004. Vystoupení by znamenalo odchod z jednotného trhu, kam míří většina českého vývozu; zastánci zdůrazňují plnou kontrolu nad vlastními zákony.",
+   "en": "Czechia has been an EU member since 2004. Leaving would mean exiting the single market, where most Czech exports go; supporters stress full control over the country's own laws."
+  }
+ },
+ {
+  "id": 3,
+  "topic": "eu",
+  "cs": "Česko má vystoupit z NATO.",
+  "en": "Czechia should leave NATO.",
+  "info": {
+   "cs": "Česko je členem NATO od roku 1999. Členové si slibují společnou obranu při napadení; zastánci vystoupení chtějí neutralitu, odpůrci upozorňují na ztrátu bezpečnostní záruky.",
+   "en": "Czechia has been a NATO member since 1999. Members promise to defend one another if attacked; supporters of leaving want neutrality, opponents point to the loss of that security guarantee."
+  }
+ },
+ {
+  "id": 4,
+  "topic": "eu",
+  "cs": "Česko má dávat podstatně více peněz na obranu.",
+  "en": "Czechia should spend substantially more on defence.",
+  "info": {
+   "cs": "Zákon ukládá dávat na obranu nejméně 2 % HDP ročně. Vyšší výdaje znamenají méně peněz jinde nebo vyšší dluh; zastánci je zdůvodňují válkou na Ukrajině a závazky v NATO.",
+   "en": "The law requires at least 2% of GDP a year for defence. Higher spending means less money elsewhere or more debt; supporters justify it by the war in Ukraine and NATO commitments."
+  }
+ },
+ {
+  "id": 5,
+  "topic": "eu",
+  "cs": "Česko má odstoupit od Zelené dohody pro Evropu (Green Deal).",
+  "en": "Czechia should withdraw from the EU Green Deal.",
+  "info": {
+   "cs": "Zelená dohoda je soubor zákonů EU, jehož cílem je klimatická neutralita do roku 2050. Jeden stát z ní sám odstoupit nemůže; může hlasovat pro změny, nebo riskovat spor s EU.",
+   "en": "The Green Deal is a set of EU laws aiming at climate neutrality by 2050. A single country cannot leave it on its own; it can vote for changes or risk a dispute with the EU."
+  }
+ },
+ {
+  "id": 6,
+  "topic": "money",
+  "cs": "Lidé s vysokými příjmy mají na daních a odvodech odvádět vyšší podíl než ostatní.",
+  "en": "People with high incomes should pay a higher share in taxes and contributions than others.",
+  "info": {
+   "cs": "Dnes je daň z příjmu 15 % a z části příjmu nad zhruba trojnásobek průměrné mzdy 23 %. Zastánci vyšší progrese mluví o spravedlnosti, odpůrci o trestání úspěchu.",
+   "en": "Income tax is 15% today, and 23% on the part of income above roughly three times the average wage. Supporters of more progression speak of fairness, opponents of punishing success."
+  }
+ },
+ {
+  "id": 7,
+  "topic": "money",
+  "cs": "Vyrovnaný státní rozpočet do čtyř let má mít přednost před novými výdaji.",
+  "en": "A balanced state budget within four years should come before new spending.",
+  "info": {
+   "cs": "Státní rozpočet skončil v roce 2025 schodkem 290,7 mld. Kč a na rok 2026 je schválen schodek 310 mld. Kč. Vyrovnat ho znamená o podobnou částku snížit výdaje nebo zvýšit daně.",
+   "en": "The state budget ended 2025 with a deficit of 290.7 bn CZK, and a 310 bn CZK deficit is approved for 2026. Balancing it means cutting spending or raising taxes by a similar amount."
+  }
+ },
+ {
+  "id": 8,
+  "topic": "money",
+  "cs": "Věk odchodu do důchodu má být zastropován na 65 letech.",
+  "en": "The retirement age should be capped at 65.",
+  "info": {
+   "cs": "Podle platného zákona se důchodový věk u mladších ročníků postupně zvyšuje až na 67 let. Strop 65 let je pro lidi příznivější, ale při stárnutí populace zvyšuje výdaje na důchody.",
+   "en": "Under current law the retirement age rises gradually to 67 for younger generations. A cap at 65 is better for individuals but raises pension spending as the population ages."
+  }
+ },
+ {
+  "id": 9,
+  "topic": "money",
+  "cs": "Má se znovu zavést elektronická evidence tržeb (EET).",
+  "en": "Electronic registration of sales (EET) should be brought back.",
+  "info": {
+   "cs": "EET znamenala, že obchodníci hlásili každou tržbu online finanční správě. Fungovala od roku 2016, v roce 2020 byla pozastavena a od roku 2023 zrušena. Zastánci v ní vidí nástroj proti daňovým únikům, odpůrci zátěž pro malé podnikatele.",
+   "en": "Under EET, sellers reported every sale online to the tax office. It ran from 2016, was suspended in 2020 and abolished from 2023. Supporters see a tool against tax evasion, opponents a burden on small businesses."
+  }
+ },
+ {
+  "id": 10,
+  "topic": "money",
+  "cs": "Dlouhodobě prázdné byty mají být zdaněny.",
+  "en": "Long-term empty flats should be taxed.",
+  "info": {
+   "cs": "Zvláštní daň z prázdných bytů dnes neexistuje. Zastánci čekají, že vrátí byty na trh, odpůrci namítají zásah do vlastnictví a obtížné prokazování.",
+   "en": "There is no special tax on empty flats today. Supporters expect it to bring flats back to the market, opponents object to interference with property and say emptiness is hard to prove."
+  }
+ },
+ {
+  "id": 11,
+  "topic": "money",
+  "cs": "Minimální mzda má dosáhnout alespoň poloviny průměrné mzdy.",
+  "en": "The minimum wage should reach at least half of the average wage.",
+  "info": {
+   "cs": "V roce 2026 je minimální mzda 22 400 Kč, tedy asi 43 % průměrné mzdy; platná pravidla míří na 47 % v roce 2029. Vyšší minimum pomáhá lidem s nízkými příjmy, firmám ale zvyšuje náklady.",
+   "en": "In 2026 the minimum wage is 22,400 CZK, about 43% of the average wage; current rules aim at 47% in 2029. A higher minimum helps low earners but raises costs for firms."
+  }
+ },
+ {
+  "id": 12,
+  "topic": "money",
+  "cs": "U léků na předpis se má zrušit DPH.",
+  "en": "VAT on prescription medicines should be abolished.",
+  "info": {
+   "cs": "Léky dnes patří do snížené 12% sazby DPH. Odhady výpadku příjmů státu se liší: od jednotek miliard po zhruba 14 mld. Kč ročně.",
+   "en": "Medicines are in the reduced 12% VAT rate today. Estimates of the lost state revenue differ, from a few billion to about 14 bn CZK a year."
+  }
+ },
+ {
+  "id": 13,
+  "topic": "work",
+  "cs": "Stát má podporovat flexibilní práci přes platformy mimo klasické zaměstnání.",
+  "en": "The state should support flexible platform work outside standard employment.",
+  "info": {
+   "cs": "Jde hlavně o kurýry a řidiče, kteří pracují přes aplikace jako samostatně výdělečné osoby. Zastánci oceňují volnost, odpůrci upozorňují na slabší ochranu než v zaměstnání.",
+   "en": "This mainly concerns couriers and drivers who work through apps as self-employed. Supporters value the freedom, opponents point to weaker protection than in employment."
+  }
+ },
+ {
+  "id": 14,
+  "topic": "work",
+  "cs": "Česko má více otevřít trh práce zahraničním pracovníkům.",
+  "en": "Czechia should open its labour market more to foreign workers.",
+  "info": {
+   "cs": "Česko má dlouhodobě jednu z nejnižších nezaměstnaností v EU a firmy hlásí nedostatek lidí. Odpůrci se obávají tlaku na mzdy a potíží se začleněním.",
+   "en": "Czechia has long had one of the lowest unemployment rates in the EU and firms report labour shortages. Opponents fear pressure on wages and problems with integration."
+  }
+ },
+ {
+  "id": 15,
+  "topic": "work",
+  "cs": "Státní dávky pro uprchlíky z Ukrajiny mají skončit.",
+  "en": "State benefits for refugees from Ukraine should end.",
+  "info": {
+   "cs": "Uprchlíci z Ukrajiny mají v EU dočasnou ochranu. Stát jim v první polovině roku 2026 vyplatil na humanitární dávce 3,63 mld. Kč; podle premiéra jsou dávky závazkem vůči EU.",
+   "en": "Refugees from Ukraine have temporary protection in the EU. In the first half of 2026 the state paid them 3.63 bn CZK in humanitarian benefit; the prime minister says the benefits are an EU obligation."
+  }
+ },
+ {
+  "id": 16,
+  "topic": "work",
+  "cs": "Stát má mladým lékařům ukládat povinnou praxi v regionech, kde lékaři chybějí.",
+  "en": "The state should require young doctors to practise in regions that lack them.",
+  "info": {
+   "cs": "V některých regionech chybějí praktičtí lékaři i zubaři. Povinná praxe by je tam dostala; odpůrci varují, že mladé lékaře odradí nebo vyžene do ciziny.",
+   "en": "Some regions lack general practitioners and dentists. Compulsory practice would bring them there; opponents warn it would deter young doctors or drive them abroad."
+  }
+ },
+ {
+  "id": 17,
+  "topic": "state",
+  "cs": "Menší obce se mají slučovat do větších celků.",
+  "en": "Smaller municipalities should be merged into larger units.",
+  "info": {
+   "cs": "Česko má asi 6 250 obcí a zhruba tři čtvrtiny z nich mají méně než 1 000 obyvatel. Větší celky mohou být levnější a odbornější, menší obce mají blíž k lidem.",
+   "en": "Czechia has about 6,250 municipalities, and roughly three quarters have fewer than 1,000 inhabitants. Larger units can be cheaper and more professional; smaller ones are closer to people."
+  }
+ },
+ {
+  "id": 18,
+  "topic": "society",
+  "cs": "Stejnopohlavní páry mají mít možnost uzavřít manželství za stejných podmínek jako ostatní.",
+  "en": "Same-sex couples should be able to marry on the same terms as others.",
+  "info": {
+   "cs": "Od roku 2025 mohou stejnopohlavní páry uzavřít partnerství s většinou práv manželů, ne však se všemi, například při osvojení dětí. Výrok se ptá na úplné zrovnoprávnění.",
+   "en": "Since 2025 same-sex couples can enter a partnership with most rights of spouses, but not all, for example in adoption. The statement asks about full equality."
+  }
+ },
+ {
+  "id": 19,
+  "topic": "society",
+  "cs": "Eutanazie má být v Česku legální.",
+  "en": "Euthanasia should be legal in Czechia.",
+  "info": {
+   "cs": "Eutanazie je dnes v Česku trestná; povolena je například v Nizozemsku, Belgii nebo Španělsku. Zastánci zdůrazňují právo rozhodnout o vlastním konci, odpůrci riziko nátlaku na nemocné.",
+   "en": "Euthanasia is a crime in Czechia today; it is allowed in the Netherlands, Belgium and Spain, for example. Supporters stress the right to decide about one's own end, opponents the risk of pressure on the ill."
+  }
+ },
+ {
+  "id": 20,
+  "topic": "society",
+  "cs": "Právo na interrupci má být zakotveno v ústavě.",
+  "en": "The right to abortion should be written into the constitution.",
+  "info": {
+   "cs": "Interrupce je v Česku legální na žádost do 12. týdne těhotenství. Zápis do ústavy by znamenal, že pravidla by šlo zpřísnit jen ústavní většinou.",
+   "en": "Abortion is legal on request in Czechia up to the 12th week of pregnancy. Writing it into the constitution would mean the rules could be tightened only by a constitutional majority."
+  }
+ },
+ {
+  "id": 21,
+  "topic": "society",
+  "cs": "Pěstování konopí pro vlastní potřebu má být legální.",
+  "en": "Growing cannabis for personal use should be legal.",
+  "info": {
+   "cs": "Od ledna 2026 smějí dospělí od 21 let pěstovat až tři rostliny a mít doma do 100 gramů konopí. Souhlas tedy znamená podporu současného stavu nebo jeho rozšíření.",
+   "en": "Since January 2026 adults aged 21 or over may grow up to three plants and keep up to 100 grams of cannabis at home. Agreeing therefore means supporting the current state or extending it."
+  }
+ },
+ {
+  "id": 22,
+  "topic": "state",
+  "cs": "Veřejnoprávní média mají být financována ze státního rozpočtu, ne z koncesionářských poplatků.",
+  "en": "Public media should be funded from the state budget, not from licence fees.",
+  "info": {
+   "cs": "Poplatky dnes činí 150 Kč měsíčně za televizi a 55 Kč za rozhlas. Vláda navrhla platit média od roku 2027 ze státního rozpočtu; kritici se obávají závislosti na politicích, zastánci mluví o úlevě domácnostem.",
+   "en": "Fees today are 150 CZK a month for television and 55 CZK for radio. The government has proposed funding the media from the state budget from 2027; critics fear dependence on politicians, supporters speak of relief for households."
+  }
+ },
+ {
+  "id": 23,
+  "topic": "state",
+  "cs": "Občané mají mít právo vyvolat celostátní referendum.",
+  "en": "Citizens should have the right to initiate a nationwide referendum.",
+  "info": {
+   "cs": "Celostátní referendum se konalo jen jednou, v roce 2003 o vstupu do EU. Obecný zákon o referendu neexistuje a vyžadoval by ústavní většinu.",
+   "en": "A nationwide referendum has been held only once, in 2003 on joining the EU. There is no general referendum law, and one would need a constitutional majority."
+  }
+ },
+ {
+  "id": 24,
+  "topic": "state",
+  "cs": "Korespondenční volba pro občany v zahraničí má zůstat zachována.",
+  "en": "Postal voting for citizens abroad should be kept.",
+  "info": {
+   "cs": "Korespondenčně mohli Češi ze zahraničí poprvé volit ve sněmovních volbách 2025. Zastánci mluví o dostupnosti voleb, odpůrci o riziku pro tajnost hlasování.",
+   "en": "Czechs abroad could vote by post for the first time in the 2025 parliamentary election. Supporters speak of access to voting, opponents of a risk to the secrecy of the ballot."
+  }
+ },
+ {
+  "id": 25,
+  "topic": "state",
+  "cs": "Neziskové organizace financované ze zahraničí se mají povinně registrovat a toto financování označovat.",
+  "en": "Non-profit organisations with foreign funding should have to register and label that funding.",
+  "info": {
+   "cs": "Zastánci chtějí, aby bylo zřejmé, kdo neziskové organizace platí. Kritici upozorňují, že podobné zákony v jiných zemích sloužily k omezování občanské společnosti.",
+   "en": "Supporters want it to be clear who pays non-profit organisations. Critics point out that similar laws in other countries have been used to restrict civil society."
+  }
+ }
+]
