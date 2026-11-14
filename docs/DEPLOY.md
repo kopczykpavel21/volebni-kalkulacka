@@ -29,7 +29,7 @@ You do not need to create tables. The site creates them on its first request.
 ## 3. Check it
 
 1. Open `https://<your-project>.vercel.app/api/health`. It should show `{"ok":true,"respondents":0}`.
-2. Fill in the calculator, tick the consent box and save.
+2. Fill in the calculator and choose "Zobrazit výsledek a uložit odpovědi".
 3. Open `/admin`, enter your `ADMIN_TOKEN`, and confirm the answer is there.
 4. In Railway, open the Postgres **Data** tab: the three tables should exist.
 

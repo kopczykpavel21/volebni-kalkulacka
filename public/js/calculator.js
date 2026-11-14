@@ -22,8 +22,12 @@ const P = {
     ya: ["rozhodně ano", "spíše ano", "nevím", "spíše ne", "rozhodně ne"], yskip: "přeskočeno",
     b_party: "odpověď strany 2025", b_editors: "doplněno editory 2025", b_news: "zprávy v médiích", flipped: "z opačně položeného výroku",
     uncoded: "Zatím nezakódované strany",
-    save_h: "Uložit odpovědi pro výzkum", save_c: "Souhlasím, aby mé odpovědi z kalkulačky byly anonymně uloženy pro výzkum.",
-    save_b: "Uložit mé odpovědi", again: "Vyplnit znovu", to_survey: "Pokračovat na průzkum: jak má být Česko spravováno"
+    save_h: "Uložit odpovědi pro výzkum", save_b: "Uložit mé odpovědi pro výzkum",
+    done_h: "Hotovo. Jak chcete výsledek zobrazit?", done_p: "Odpověděli jste na {n} z 25 výroků.",
+    done_save: "Zobrazit výsledek a uložit odpovědi", done_nosave: "Zobrazit výsledek bez uložení",
+    done_consent: "Kliknutím na „Zobrazit výsledek a uložit odpovědi“ souhlasíte s tím, že se vaše odpovědi anonymně uloží pro výzkum a započítají do veřejných součtů.",
+    saved_h: "Vaše odpovědi jsou uloženy pro výzkum", saved_p: "Smazat je můžete kdykoli na stránce Jak to funguje.",
+    unsaved_p: "Vaše odpovědi zatím uloženy nejsou. Kliknutím na tlačítko souhlasíte s jejich anonymním uložením pro výzkum.", again: "Vyplnit znovu", to_survey: "Pokračovat na průzkum: jak má být Česko spravováno"
   },
   en: {
     h: "Which party is closest to you?", p: "Compare your views with what parties say and with what they actually did. It takes about five minutes.",
@@ -45,13 +49,17 @@ const P = {
     ya: ["strongly yes", "somewhat yes", "not sure", "somewhat no", "strongly no"], yskip: "skipped",
     b_party: "party's 2025 answer", b_editors: "filled in by editors, 2025", b_news: "news reports", flipped: "from a statement worded the opposite way",
     uncoded: "Parties not yet coded",
-    save_h: "Save answers for research", save_c: "I agree that my calculator answers are stored anonymously for research.",
-    save_b: "Save my answers", again: "Start again", to_survey: "Continue to the survey: how should Czechia be governed"
+    save_h: "Save answers for research", save_b: "Save my answers for research",
+    done_h: "Done. How do you want to see the result?", done_p: "You answered {n} of 25 statements.",
+    done_save: "Show my result and save my answers", done_nosave: "Show my result without saving",
+    done_consent: "By clicking “Show my result and save my answers” you agree that your answers are stored anonymously for research and counted in the public totals.",
+    saved_h: "Your answers are saved for research", saved_p: "You can delete them at any time on the How it works page.",
+    unsaved_p: "Your answers are not saved yet. By clicking the button you agree to their anonymous storage for research.", again: "Start again", to_survey: "Continue to the survey: how should Czechia be governed"
   }
 };
 const t = makeT(P);
 const DUMMY = 5, TIE = 7;
-const S = { view: "intro", i: 0, answers: {}, star: {}, weight: 50, consent: false, saved: false };
+const S = { view: "intro", i: 0, answers: {}, star: {}, weight: 50, consent: false, saved: false, failed: false };
 let D, draw;
 
 /** A party's position on one statement, blended between what it says and what it did. */
@@ -79,7 +87,7 @@ function vIntro() {
 
 function vQuestion() {
   const st = D.statements, s = st[S.i], cur = S.answers[s.id];
-  const step = d => { S.i += d; if (S.i >= st.length) { S.i = st.length - 1; S.view = "result"; } draw(); window.scrollTo(0, 0); };
+  const step = d => { S.i += d; if (S.i >= st.length) { S.i = st.length - 1; S.view = "done"; } draw(); window.scrollTo(0, 0); };
   const answer = v => { S.answers[s.id] = { a: v, imp: !!S.star[s.id] }; S.saved = false; step(1); };
   const imp = el("input", { type: "checkbox", checked: !!S.star[s.id], onchange: e => { S.star[s.id] = e.target.checked; if (S.answers[s.id]) S.answers[s.id].imp = e.target.checked; } });
   return [
@@ -91,7 +99,7 @@ function vQuestion() {
       el("p", {}, el("label", { class: "check small" }, imp, t("important"))),
       el("div", { class: "row" }, S.i > 0 ? btn(t("back"), () => step(-1)) : el("span"),
         el("span", {}, btn(t("skip"), () => { delete S.answers[s.id]; step(1); }), " ",
-          S.i === st.length - 1 ? btn(t("finish"), () => { S.view = "result"; draw(); }, "primary") : (cur ? btn(t("next"), () => step(1)) : null)))),
+          S.i === st.length - 1 ? btn(t("finish"), () => { S.view = "done"; draw(); window.scrollTo(0, 0); }, "primary") : (cur ? btn(t("next"), () => step(1)) : null)))),
     el("p", { class: "hint" }, t("skip_note"))
   ];
 }
@@ -140,7 +148,7 @@ function vResult() {
   setTimeout(() => list.classList.remove("grow"), 900);
   const out = el("output", { class: "small" }, S.weight + " %");
   const slider = el("input", { type: "range", min: 0, max: 100, step: 10, value: S.weight, "aria-label": t("sl_h"),
-    oninput: e => { S.weight = +e.target.value; out.textContent = S.weight + " %"; S.saved = false; paint(); } });
+    oninput: e => { S.weight = +e.target.value; out.textContent = S.weight + " %"; paint(); if (S.consent) resaveSoon(() => vSave.update && vSave.update()); } });
   return [
     el("h1", {}, t("res_h")), el("p", { class: "lead" }, t("res_p")),
     el("details", { class: "info" }, el("summary", {}, t("read_h")), t("read").map(x => el("p", { class: "small" }, x))),
@@ -153,21 +161,47 @@ function vResult() {
   ];
 }
 
+/** Sends the answers. Called only after the person clicked a button that states the consent. */
+async function saveNow() {
+  S.consent = true;
+  try {
+    await api("calculator", { method: "POST", body: { consent: true, respondent: respondentId(true), lang, answers: S.answers, record_weight: S.weight } });
+    S.saved = true; S.failed = false;
+  } catch { S.saved = false; S.failed = true; }
+}
+let resaveTimer;
+/** After consent, a moved slider is stored too, a moment after the person stops moving it. */
+function resaveSoon(update) { clearTimeout(resaveTimer); resaveTimer = setTimeout(async () => { await saveNow(); update(); }, 800); }
+
+function vDone() {
+  const n = Object.keys(S.answers).length;
+  if (!n) { S.view = "result"; return vResult(); }
+  const status = el("span", { class: "small muted", role: "status" });
+  const show = () => { S.view = "result"; draw(); window.scrollTo(0, 0); };
+  const save = btn(t("done_save"), async () => { save.disabled = true; status.textContent = T[lang].saving; await saveNow(); show(); }, "primary");
+  return [el("h1", {}, t("done_h")), el("p", { class: "lead" }, fmt(t("done_p"), { n })),
+    el("div", { class: "card" },
+      el("p", {}, t("done_consent")),
+      el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()),
+      el("div", { class: "row" }, btn(t("back"), () => { S.view = "q"; draw(); }), el("span", {}, status, " ", save)),
+      el("p", {}, btn(t("done_nosave"), show, "link")))];
+}
+
 function vSave() {
-  const status = el("span", { class: "small muted", role: "status" }, S.saved ? t("saved") : "");
-  const save = btn(t("save_b"), async () => {
-    save.disabled = true; status.textContent = t("saving");
-    try {
-      await api("calculator", { method: "POST", body: { consent: true, respondent: respondentId(true), lang, answers: S.answers, record_weight: S.weight } });
-      S.saved = true; status.textContent = t("saved");
-    } catch { save.disabled = false; status.textContent = t("err"); }
-  }, "primary");
-  save.disabled = !S.consent || S.saved;
-  return el("div", { class: "card" }, el("h2", { style: "margin-top:0" }, t("save_h")),
-    el("label", { class: "check" }, el("input", { type: "checkbox", checked: S.consent, onchange: e => { S.consent = e.target.checked; save.disabled = !S.consent || S.saved; } }), t("save_c")),
-    el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()),
-    el("div", { class: "row" }, btn(t("again"), () => { Object.assign(S, { view: "q", i: 0, answers: {}, star: {}, saved: false }); draw(); }), el("span", {}, status, " ", save)),
-    el("p", {}, el("a", { href: "/pruzkum" }, t("to_survey") + " →")));
+  const box = el("div", { class: "card" });
+  const paint = () => {
+    const again = btn(t("again"), () => { Object.assign(S, { view: "q", i: 0, answers: {}, star: {}, saved: false, consent: false, failed: false, order: null }); draw(); });
+    const save = btn(t("save_b"), async () => { save.disabled = true; await saveNow(); paint(); }, "primary");
+    box.replaceChildren(
+      el("h2", { style: "margin-top:0" }, S.saved ? t("saved_h") : t("save_h")),
+      el("p", { role: "status" }, S.saved ? t("saved_p") : S.failed ? T[lang].err : t("unsaved_p")),
+      S.saved ? null : el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()),
+      el("div", { class: "row" }, again, S.saved ? el("span") : save),
+      el("p", {}, el("a", { href: "/pruzkum" }, t("to_survey"))));
+  };
+  paint();
+  vSave.update = paint;
+  return box;
 }
 
 if (typeof document !== "undefined") {
@@ -180,6 +214,6 @@ if (typeof document !== "undefined") {
   });
   draw = mount(async () => {
     if (!D) D = await loadData("statements", "parties");
-    return S.view === "intro" ? vIntro() : S.view === "q" ? vQuestion() : vResult();
+    return S.view === "intro" ? vIntro() : S.view === "q" ? vQuestion() : S.view === "done" ? vDone() : vResult();
   });
 }
