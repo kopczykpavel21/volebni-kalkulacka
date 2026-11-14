@@ -1,651 +1,2181 @@
 {
- "about": "Pilot of source A (recorded votes). Not used by the calculator yet. v is the direction on the statement: +1 acted for it, -1 acted against it, null = no usable signal. Club tallies come from news reports (ČTK and others); exact per-club counts need the Chamber's open voting data.",
+ "about": "Recorded votes for nine statements, from the Chamber of Deputies open data (psp.cz, files hl-2021ps.zip, hl-2025ps.zip, poslanci.zip, read 2026-11-14). Not used by the calculator yet. A club counts as for or against when at least two thirds of its members who cast a vote did so; otherwise v is null. v is the direction on the statement.",
+ "votes": {
+  "79190": {
+   "date": "2022-11-25",
+   "schuze": 46,
+   "cislo": 11,
+   "name": "Novela z. o evidenci tržeb (zrušení EET)",
+   "clubs": {
+    "ANO": {
+     "ano": 0,
+     "ne": 50,
+     "zdrzel": 0,
+     "nepritomen": 22
+    },
+    "ODS": {
+     "ano": 23,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 11
+    },
+    "STAN": {
+     "ano": 22,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 11
+    },
+    "KDU-ČSL": {
+     "ano": 16,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 7
+    },
+    "SPD": {
+     "ano": 15,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 5
+    },
+    "TOP09": {
+     "ano": 13,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "Piráti": {
+     "ano": 3,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    }
+   }
+  },
+  "80467": {
+   "date": "2023-04-21",
+   "schuze": 63,
+   "cislo": 145,
+   "name": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "clubs": {
+    "ANO": {
+     "ano": 51,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 19
+    },
+    "KDU-ČSL": {
+     "ano": 21,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "ODS": {
+     "ano": 24,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 9
+    },
+    "Piráti": {
+     "ano": 4,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "SPD": {
+     "ano": 1,
+     "ne": 11,
+     "zdrzel": 0,
+     "nepritomen": 8
+    },
+    "STAN": {
+     "ano": 23,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 10
+    },
+    "TOP09": {
+     "ano": 11,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 3
+    }
+   }
+  },
+  "82529": {
+   "date": "2024-02-28",
+   "schuze": 94,
+   "cislo": 37,
+   "name": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "clubs": {
+    "ODS": {
+     "ano": 6,
+     "ne": 11,
+     "zdrzel": 16,
+     "nepritomen": 1
+    },
+    "ANO": {
+     "ano": 8,
+     "ne": 12,
+     "zdrzel": 45,
+     "nepritomen": 6
+    },
+    "STAN": {
+     "ano": 31,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 1
+    },
+    "KDU-ČSL": {
+     "ano": 3,
+     "ne": 14,
+     "zdrzel": 2,
+     "nepritomen": 4
+    },
+    "Piráti": {
+     "ano": 3,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 17,
+     "zdrzel": 0,
+     "nepritomen": 3
+    },
+    "TOP09": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    }
+   }
+  },
+  "82534": {
+   "date": "2024-02-28",
+   "schuze": 94,
+   "cislo": 42,
+   "name": "Novela občanského zákoníku: závěrečné hlasování (partnerství, ne manželství)",
+   "clubs": {
+    "ODS": {
+     "ano": 15,
+     "ne": 9,
+     "zdrzel": 8,
+     "nepritomen": 2
+    },
+    "ANO": {
+     "ano": 65,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 5
+    },
+    "STAN": {
+     "ano": 19,
+     "ne": 2,
+     "zdrzel": 3,
+     "nepritomen": 9
+    },
+    "KDU-ČSL": {
+     "ano": 6,
+     "ne": 8,
+     "zdrzel": 5,
+     "nepritomen": 4
+    },
+    "Piráti": {
+     "ano": 3,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "TOP09": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 17,
+     "zdrzel": 0,
+     "nepritomen": 3
+    }
+   }
+  },
+  "83203": {
+   "date": "2024-06-21",
+   "schuze": 107,
+   "cislo": 29,
+   "name": "Novela z. o správě voleb (korespondenční volba)",
+   "clubs": {
+    "ODS": {
+     "ano": 24,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 10
+    },
+    "ANO": {
+     "ano": 0,
+     "ne": 60,
+     "zdrzel": 1,
+     "nepritomen": 10
+    },
+    "STAN": {
+     "ano": 31,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "KDU-ČSL": {
+     "ano": 20,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 3
+    },
+    "Piráti": {
+     "ano": 4,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 15,
+     "zdrzel": 0,
+     "nepritomen": 5
+    },
+    "TOP09": {
+     "ano": 12,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    }
+   }
+  },
+  "83999": {
+   "date": "2024-11-08",
+   "schuze": 117,
+   "cislo": 52,
+   "name": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "clubs": {
+    "ANO": {
+     "ano": 0,
+     "ne": 67,
+     "zdrzel": 0,
+     "nepritomen": 4
+    },
+    "KDU-ČSL": {
+     "ano": 22,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "ODS": {
+     "ano": 35,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "Piráti": {
+     "ano": 0,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 4
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 18,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "STAN": {
+     "ano": 31,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "TOP09": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    }
+   }
+  },
+  "85057": {
+   "date": "2025-03-05",
+   "schuze": 129,
+   "cislo": 43,
+   "name": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "clubs": {
+    "ANO": {
+     "ano": 0,
+     "ne": 70,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "KDU-ČSL": {
+     "ano": 20,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "ODS": {
+     "ano": 32,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 3
+    },
+    "Piráti": {
+     "ano": 1,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 2
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 19,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "STAN": {
+     "ano": 31,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "TOP09": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    }
+   }
+  },
+  "85540": {
+   "date": "2025-04-25",
+   "schuze": 136,
+   "cislo": 204,
+   "name": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "clubs": {
+    "ANO": {
+     "ano": 64,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 7
+    },
+    "KDU-ČSL": {
+     "ano": 17,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 5
+    },
+    "ODS": {
+     "ano": 28,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 7
+    },
+    "Piráti": {
+     "ano": 3,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 16,
+     "zdrzel": 0,
+     "nepritomen": 4
+    },
+    "STAN": {
+     "ano": 24,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 9
+    },
+    "TOP09": {
+     "ano": 12,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    }
+   }
+  },
+  "85963": {
+   "date": "2025-05-30",
+   "schuze": 139,
+   "cislo": 302,
+   "name": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "clubs": {
+    "ANO": {
+     "ano": 56,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 15
+    },
+    "KDU-ČSL": {
+     "ano": 17,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 5
+    },
+    "ODS": {
+     "ano": 28,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 6
+    },
+    "Piráti": {
+     "ano": 4,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 16,
+     "zdrzel": 0,
+     "nepritomen": 4
+    },
+    "STAN": {
+     "ano": 26,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 7
+    },
+    "TOP09": {
+     "ano": 11,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 3
+    }
+   }
+  },
+  "86957": {
+   "date": "2026-03-11",
+   "schuze": 10,
+   "cislo": 235,
+   "name": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "clubs": {
+    "ANO": {
+     "ano": 77,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 3
+    },
+    "KDU-ČSL": {
+     "ano": 0,
+     "ne": 16,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "Motoristé": {
+     "ano": 12,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "ODS": {
+     "ano": 1,
+     "ne": 25,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "Piráti": {
+     "ano": 0,
+     "ne": 18,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "SPD": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "STAN": {
+     "ano": 0,
+     "ne": 19,
+     "zdrzel": 0,
+     "nepritomen": 3
+    },
+    "TOP09": {
+     "ano": 0,
+     "ne": 9,
+     "zdrzel": 0,
+     "nepritomen": 0
+    }
+   }
+  },
+  "88356": {
+   "date": "2026-07-15",
+   "schuze": 25,
+   "cislo": 88,
+   "name": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "clubs": {
+    "ANO": {
+     "ano": 68,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 12
+    },
+    "KDU-ČSL": {
+     "ano": 0,
+     "ne": 1,
+     "zdrzel": 13,
+     "nepritomen": 2
+    },
+    "Motoristé": {
+     "ano": 7,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 6
+    },
+    "ODS": {
+     "ano": 0,
+     "ne": 20,
+     "zdrzel": 0,
+     "nepritomen": 7
+    },
+    "Piráti": {
+     "ano": 0,
+     "ne": 3,
+     "zdrzel": 10,
+     "nepritomen": 5
+    },
+    "SPD": {
+     "ano": 9,
+     "ne": 0,
+     "zdrzel": 1,
+     "nepritomen": 5
+    },
+    "STAN": {
+     "ano": 1,
+     "ne": 18,
+     "zdrzel": 1,
+     "nepritomen": 2
+    },
+    "TOP09": {
+     "ano": 0,
+     "ne": 7,
+     "zdrzel": 0,
+     "nepritomen": 2
+    }
+   }
+  },
+  "88874": {
+   "date": "2026-10-24",
+   "schuze": 34,
+   "cislo": 285,
+   "name": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "clubs": {
+    "ANO": {
+     "ano": 0,
+     "ne": 69,
+     "zdrzel": 0,
+     "nepritomen": 11
+    },
+    "KDU-ČSL": {
+     "ano": 14,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "Motoristé": {
+     "ano": 0,
+     "ne": 13,
+     "zdrzel": 0,
+     "nepritomen": 0
+    },
+    "ODS": {
+     "ano": 23,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 4
+    },
+    "Piráti": {
+     "ano": 16,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    },
+    "SPD": {
+     "ano": 0,
+     "ne": 14,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "STAN": {
+     "ano": 21,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 1
+    },
+    "TOP09": {
+     "ano": 7,
+     "ne": 0,
+     "zdrzel": 0,
+     "nepritomen": 2
+    }
+   }
+  }
+ },
  "records": [
   {
    "statement": 4,
-   "party": "spd",
+   "party": "ANO",
    "date": "2023-04-21",
    "kind": "vote",
-   "what": "Zákon o financování obrany: nejméně 2 % HDP ročně (3. čtení)",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 51,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 19
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
+  },
+  {
+   "statement": 4,
+   "party": "KDU-ČSL",
+   "date": "2023-04-21",
+   "kind": "vote",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 21,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
+  },
+  {
+   "statement": 4,
+   "party": "ODS",
+   "date": "2023-04-21",
+   "kind": "vote",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 24,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 9
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
+  },
+  {
+   "statement": 4,
+   "party": "Piráti",
+   "date": "2023-04-21",
+   "kind": "vote",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 4,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
+  },
+  {
+   "statement": 4,
+   "party": "SPD",
+   "date": "2023-04-21",
+   "kind": "vote",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 1,
+    "ne": 11,
+    "zdrzel": 0,
+    "nepritomen": 8
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "navrhla zamítnutí zákona",
-   "sources": [
-    "https://echo24.cz/a/HcJSE/zpravy-ekonomika-snemovna-schvalila-dazdorocni-vynakladani-hdp-obrana-naklady-zajisti-stabilita-modernizace-armada",
-    "https://ekonomickydenik.cz/snemovna-schvalila-zakony-ktere-maji-posilit-obranyschopnost-ceske-republiky-pro-bylo-i-opozicni-hnuti-ano/"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
   },
   {
    "statement": 4,
-   "party": "ano",
+   "party": "STAN",
    "date": "2023-04-21",
    "kind": "vote",
-   "what": "Zákon o financování obrany: nejméně 2 % HDP ročně (3. čtení)",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 23,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 10
+   },
    "v": 1,
-   "confidence": "medium",
-   "detail": "zákon prošel i s podporou ANO; přesný počet hlasů klubu neověřen",
-   "sources": [
-    "https://echo24.cz/a/HcJSE/zpravy-ekonomika-snemovna-schvalila-dazdorocni-vynakladani-hdp-obrana-naklady-zajisti-stabilita-modernizace-armada",
-    "https://ekonomickydenik.cz/snemovna-schvalila-zakony-ktere-maji-posilit-obranyschopnost-ceske-republiky-pro-bylo-i-opozicni-hnuti-ano/"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
   },
   {
    "statement": 4,
-   "party": "spolu",
+   "party": "TOP09",
    "date": "2023-04-21",
    "kind": "vote",
-   "what": "Zákon o financování obrany: nejméně 2 % HDP ročně (3. čtení)",
+   "vote_id": "80467",
+   "what": "Vl. n. z. o financování obrany ČR (2 % HDP)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 11,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
    "v": 1,
-   "confidence": "medium",
-   "detail": "vládní návrh, kluby ODS, KDU-ČSL, TOP 09",
-   "sources": [
-    "https://echo24.cz/a/HcJSE/zpravy-ekonomika-snemovna-schvalila-dazdorocni-vynakladani-hdp-obrana-naklady-zajisti-stabilita-modernizace-armada",
-    "https://ekonomickydenik.cz/snemovna-schvalila-zakony-ktere-maji-posilit-obranyschopnost-ceske-republiky-pro-bylo-i-opozicni-hnuti-ano/"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=80467"
   },
   {
    "statement": 4,
-   "party": "stan",
-   "date": "2023-04-21",
-   "kind": "vote",
-   "what": "Zákon o financování obrany: nejméně 2 % HDP ročně (3. čtení)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "vládní návrh",
-   "sources": [
-    "https://echo24.cz/a/HcJSE/zpravy-ekonomika-snemovna-schvalila-dazdorocni-vynakladani-hdp-obrana-naklady-zajisti-stabilita-modernizace-armada",
-    "https://ekonomickydenik.cz/snemovna-schvalila-zakony-ktere-maji-posilit-obranyschopnost-ceske-republiky-pro-bylo-i-opozicni-hnuti-ano/"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 4,
-   "party": "pirati",
-   "date": "2023-04-21",
-   "kind": "vote",
-   "what": "Zákon o financování obrany: nejméně 2 % HDP ročně (3. čtení)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "tehdy ve vládě",
-   "sources": [
-    "https://echo24.cz/a/HcJSE/zpravy-ekonomika-snemovna-schvalila-dazdorocni-vynakladani-hdp-obrana-naklady-zajisti-stabilita-modernizace-armada",
-    "https://ekonomickydenik.cz/snemovna-schvalila-zakony-ktere-maji-posilit-obranyschopnost-ceske-republiky-pro-bylo-i-opozicni-hnuti-ano/"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 4,
-   "party": "spd",
+   "party": "ANO",
    "date": "2025-04-25",
    "kind": "vote",
-   "what": "Výdaje na obranu nad 2 % HDP mimo výdajové limity (148 pro, 16 proti)",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 64,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 7
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
+  },
+  {
+   "statement": 4,
+   "party": "KDU-ČSL",
+   "date": "2025-04-25",
+   "kind": "vote",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 17,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 5
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
+  },
+  {
+   "statement": 4,
+   "party": "ODS",
+   "date": "2025-04-25",
+   "kind": "vote",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 28,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 7
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
+  },
+  {
+   "statement": 4,
+   "party": "Piráti",
+   "date": "2025-04-25",
+   "kind": "vote",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 3,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
+  },
+  {
+   "statement": 4,
+   "party": "SPD",
+   "date": "2025-04-25",
+   "kind": "vote",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 16,
+    "zdrzel": 0,
+    "nepritomen": 4
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "16 přítomných poslanců proti",
-   "sources": [
-    "https://ekonomickydenik.cz/snemovna-otevrela-dvere-k-rustu-vydaju-na-obranu-pres-dve-procenta-hdp/"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
   },
   {
    "statement": 4,
-   "party": "ano",
+   "party": "STAN",
    "date": "2025-04-25",
    "kind": "vote",
-   "what": "Výdaje na obranu nad 2 % HDP mimo výdajové limity (148 pro, 16 proti)",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 24,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 9
+   },
    "v": 1,
-   "confidence": "medium",
-   "detail": "148 hlasů „napříč kluby“; hlasy klubu ANO jednotlivě neuvedeny",
-   "sources": [
-    "https://ekonomickydenik.cz/snemovna-otevrela-dvere-k-rustu-vydaju-na-obranu-pres-dve-procenta-hdp/"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
   },
   {
    "statement": 4,
-   "party": "spolu",
+   "party": "TOP09",
    "date": "2025-04-25",
    "kind": "vote",
-   "what": "Výdaje na obranu nad 2 % HDP mimo výdajové limity (148 pro, 16 proti)",
+   "vote_id": "85540",
+   "what": "Vl. n. z. související s řízením veřejných financí (obrana nad 2 % HDP mimo limity)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 12,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
    "v": 1,
-   "confidence": "medium",
-   "detail": "koalice",
-   "sources": [
-    "https://ekonomickydenik.cz/snemovna-otevrela-dvere-k-rustu-vydaju-na-obranu-pres-dve-procenta-hdp/"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85540"
   },
   {
-   "statement": 4,
-   "party": "stan",
-   "date": "2025-04-25",
+   "statement": 7,
+   "party": "ANO",
+   "date": "2026-03-11",
    "kind": "vote",
-   "what": "Výdaje na obranu nad 2 % HDP mimo výdajové limity (148 pro, 16 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "koalice",
-   "sources": [
-    "https://ekonomickydenik.cz/snemovna-otevrela-dvere-k-rustu-vydaju-na-obranu-pres-dve-procenta-hdp/"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 4,
-   "party": "pirati",
-   "date": "2025-04-25",
-   "kind": "vote",
-   "what": "Výdaje na obranu nad 2 % HDP mimo výdajové limity (148 pro, 16 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "napříč kluby",
-   "sources": [
-    "https://ekonomickydenik.cz/snemovna-otevrela-dvere-k-rustu-vydaju-na-obranu-pres-dve-procenta-hdp/"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 8,
-   "party": "spolu",
-   "date": "2024-11-08",
-   "kind": "vote",
-   "what": "Důchodová reforma: růst důchodového věku až na 67 let (103 pro z 188)",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 77,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "ODS, KDU-ČSL, TOP 09 pro",
-   "sources": [
-    "https://www.e15.cz/domaci/snemovna-schvalila-duchodovou-reformu-v-podobe-jak-se-na-ni-dohodla-koalice-1419938",
-    "https://www.ceskenoviny.cz/zpravy/zive-snemovna-schvalila-reformu-duchodu-s-rustem-veku-do-67-let/2591788"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
   },
   {
-   "statement": 8,
-   "party": "stan",
-   "date": "2024-11-08",
+   "statement": 7,
+   "party": "KDU-ČSL",
+   "date": "2026-03-11",
    "kind": "vote",
-   "what": "Důchodová reforma: růst důchodového věku až na 67 let (103 pro z 188)",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 16,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
+  },
+  {
+   "statement": 7,
+   "party": "Motoristé",
+   "date": "2026-03-11",
+   "kind": "vote",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 12,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "pro",
-   "sources": [
-    "https://www.e15.cz/domaci/snemovna-schvalila-duchodovou-reformu-v-podobe-jak-se-na-ni-dohodla-koalice-1419938",
-    "https://www.ceskenoviny.cz/zpravy/zive-snemovna-schvalila-reformu-duchodu-s-rustem-veku-do-67-let/2591788"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
   },
   {
-   "statement": 8,
-   "party": "ano",
-   "date": "2024-11-08",
+   "statement": 7,
+   "party": "ODS",
+   "date": "2026-03-11",
    "kind": "vote",
-   "what": "Důchodová reforma: růst důchodového věku až na 67 let (103 pro z 188)",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 1,
+    "ne": 25,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
    "v": 1,
    "confidence": "high",
-   "detail": "proti; navrhovalo ponechat 65 let",
-   "sources": [
-    "https://www.e15.cz/domaci/snemovna-schvalila-duchodovou-reformu-v-podobe-jak-se-na-ni-dohodla-koalice-1419938",
-    "https://www.ceskenoviny.cz/zpravy/zive-snemovna-schvalila-reformu-duchodu-s-rustem-veku-do-67-let/2591788"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
   },
   {
-   "statement": 8,
-   "party": "spd",
-   "date": "2024-11-08",
+   "statement": 7,
+   "party": "Piráti",
+   "date": "2026-03-11",
    "kind": "vote",
-   "what": "Důchodová reforma: růst důchodového věku až na 67 let (103 pro z 188)",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 18,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
    "v": 1,
    "confidence": "high",
-   "detail": "proti; navrhovala ponechat 65 let",
-   "sources": [
-    "https://www.e15.cz/domaci/snemovna-schvalila-duchodovou-reformu-v-podobe-jak-se-na-ni-dohodla-koalice-1419938",
-    "https://www.ceskenoviny.cz/zpravy/zive-snemovna-schvalila-reformu-duchodu-s-rustem-veku-do-67-let/2591788"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
+  },
+  {
+   "statement": 7,
+   "party": "SPD",
+   "date": "2026-03-11",
+   "kind": "vote",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 14,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
+  },
+  {
+   "statement": 7,
+   "party": "STAN",
+   "date": "2026-03-11",
+   "kind": "vote",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 19,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
+  },
+  {
+   "statement": 7,
+   "party": "TOP09",
+   "date": "2026-03-11",
+   "kind": "vote",
+   "vote_id": "86957",
+   "what": "Vl. n. z. o státním rozpočtu ČR na rok 2026 (schodek 310 mld. Kč)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 9,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=86957"
   },
   {
    "statement": 8,
-   "party": "pirati",
+   "party": "ANO",
    "date": "2024-11-08",
    "kind": "vote",
-   "what": "Důchodová reforma: růst důchodového věku až na 67 let (103 pro z 188)",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 67,
+    "zdrzel": 0,
+    "nepritomen": 4
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
+  },
+  {
+   "statement": 8,
+   "party": "KDU-ČSL",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 22,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
+  },
+  {
+   "statement": 8,
+   "party": "ODS",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 35,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
+  },
+  {
+   "statement": 8,
+   "party": "Piráti",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "nehlasoval",
+   "counts": {
+    "ano": 0,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 4
+   },
    "v": null,
    "confidence": "high",
-   "detail": "nehlasovali pro; odešli ze sálu kvůli náročným profesím, ne kvůli stropu",
-   "sources": [
-    "https://www.e15.cz/domaci/snemovna-schvalila-duchodovou-reformu-v-podobe-jak-se-na-ni-dohodla-koalice-1419938",
-    "https://www.ceskenoviny.cz/zpravy/zive-snemovna-schvalila-reformu-duchodu-s-rustem-veku-do-67-let/2591788"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
   },
   {
    "statement": 8,
-   "party": "ano",
-   "date": "2026-07-20",
-   "kind": "pledge_open",
-   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
-   "v": null,
+   "party": "SPD",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 18,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": 1,
    "confidence": "high",
-   "detail": "slib trvá, ale odložen",
-   "sources": [
-    "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717",
-    "https://pravniprostor.cz/aktuality/vlada-schvalila-novelu-se-zvysovanim-penzi-po-osmdesatce-a-za-praci-v-duchodu"
-   ],
-   "note": "Výsledek: zatím nesplněno. Návrh: počítat jako 0 (půl cesty), dokud strop neprojde.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
   },
   {
    "statement": 8,
-   "party": "spd",
-   "date": "2026-07-20",
-   "kind": "pledge_open",
-   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
-   "v": null,
-   "confidence": "medium",
-   "detail": "člen vlády",
-   "sources": [
-    "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717",
-    "https://pravniprostor.cz/aktuality/vlada-schvalila-novelu-se-zvysovanim-penzi-po-osmdesatce-a-za-praci-v-duchodu"
-   ],
-   "note": "Výsledek: zatím nesplněno. Návrh: počítat jako 0 (půl cesty), dokud strop neprojde.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "party": "STAN",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 31,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
   },
   {
    "statement": 8,
-   "party": "motoriste",
-   "date": "2026-07-20",
-   "kind": "pledge_open",
-   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
+   "party": "TOP09",
+   "date": "2024-11-08",
+   "kind": "vote",
+   "vote_id": "83999",
+   "what": "Novela z. o důchodovém pojištění (důchodový věk až 67 let)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 14,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83999"
+  },
+  {
+   "statement": 9,
+   "party": "ANO",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 50,
+    "zdrzel": 0,
+    "nepritomen": 22
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "ODS",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 23,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 11
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "STAN",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 22,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 11
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "KDU-ČSL",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 16,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 7
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "SPD",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 15,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 5
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "TOP09",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 13,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "Piráti",
+   "date": "2022-11-25",
+   "kind": "vote",
+   "vote_id": "79190",
+   "what": "Novela z. o evidenci tržeb (zrušení EET)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 3,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=79190"
+  },
+  {
+   "statement": 9,
+   "party": "ANO",
+   "date": "2026-07-15",
+   "kind": "vote",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 68,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 12
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
+  },
+  {
+   "statement": 9,
+   "party": "KDU-ČSL",
+   "date": "2026-07-15",
+   "kind": "vote",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "zdržel se / rozdělen",
+   "counts": {
+    "ano": 0,
+    "ne": 1,
+    "zdrzel": 13,
+    "nepritomen": 2
+   },
    "v": null,
-   "confidence": "medium",
-   "detail": "člen vlády",
-   "sources": [
-    "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717",
-    "https://pravniprostor.cz/aktuality/vlada-schvalila-novelu-se-zvysovanim-penzi-po-osmdesatce-a-za-praci-v-duchodu"
-   ],
-   "note": "Výsledek: zatím nesplněno. Návrh: počítat jako 0 (půl cesty), dokud strop neprojde.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
   },
   {
    "statement": 9,
-   "party": "ano",
+   "party": "Motoristé",
    "date": "2026-07-15",
    "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 7,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 6
+   },
    "v": 1,
    "confidence": "high",
-   "detail": "vládní návrh",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
   },
   {
    "statement": 9,
-   "party": "spd",
+   "party": "ODS",
    "date": "2026-07-15",
    "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 20,
+    "zdrzel": 0,
+    "nepritomen": 7
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
+  },
+  {
+   "statement": 9,
+   "party": "Piráti",
+   "date": "2026-07-15",
+   "kind": "vote",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "zdržel se / rozdělen",
+   "counts": {
+    "ano": 0,
+    "ne": 3,
+    "zdrzel": 10,
+    "nepritomen": 5
+   },
+   "v": null,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
+  },
+  {
+   "statement": 9,
+   "party": "SPD",
+   "date": "2026-07-15",
+   "kind": "vote",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 9,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 5
+   },
    "v": 1,
    "confidence": "high",
-   "detail": "koalice pro; režim „EET OFF“ vyjednán na žádost SPD a Motoristů",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
   },
   {
    "statement": 9,
-   "party": "motoriste",
+   "party": "STAN",
    "date": "2026-07-15",
    "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
-   "v": 1,
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 1,
+    "ne": 18,
+    "zdrzel": 1,
+    "nepritomen": 2
+   },
+   "v": -1,
    "confidence": "high",
-   "detail": "koalice pro",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
   },
   {
    "statement": 9,
-   "party": "spolu",
+   "party": "TOP09",
    "date": "2026-07-15",
    "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
+   "vote_id": "88356",
+   "what": "Vl. n. z. o evidenci tržeb (EET 2.0)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 7,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
    "v": -1,
-   "confidence": "medium",
-   "detail": "ODS navrhla zamítnutí; KDU-ČSL v 1. čtení zamítnutí nepodpořila – kluby se lišily",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 9,
-   "party": "stan",
-   "date": "2026-07-15",
-   "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
-   "v": -1,
-   "confidence": "medium",
-   "detail": "opozice proti; klub jednotlivě neuveden",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 9,
-   "party": "pirati",
-   "date": "2026-07-15",
-   "kind": "vote",
-   "what": "Zákon o evidenci tržeb (EET 2.0), 3. čtení: 84 koaličních pro, 50 opozičních proti",
-   "v": -1,
-   "confidence": "medium",
-   "detail": "opozice proti; klub jednotlivě neuveden",
-   "sources": [
-    "https://www.blesk.cz/clanek/843912",
-    "https://www.e15.cz/ekonomika/poslanci-schvalili-navrat-eet-co-se-zmeni-a-kdo-se-muze-z-evidence-vykoupit-1432567",
-    "https://www.ceskenoviny.cz/zpravy/snemovna-se-pristi-tyden-sejde-mimoradne-k-eet-ci-statnim-pojistencum/2846159"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88356"
   },
   {
    "statement": 18,
-   "party": "spd",
+   "party": "ODS",
    "date": "2024-02-28",
    "kind": "vote",
-   "what": "Novela občanského zákoníku: místo manželství schváleno partnerství (123 pro, 36 proti); o manželství se nehlasovalo",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "zdržel se / rozdělen",
+   "counts": {
+    "ano": 6,
+    "ne": 11,
+    "zdrzel": 16,
+    "nepritomen": 1
+   },
+   "v": null,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "ANO",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "zdržel se / rozdělen",
+   "counts": {
+    "ano": 8,
+    "ne": 12,
+    "zdrzel": 45,
+    "nepritomen": 6
+   },
+   "v": null,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "STAN",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 31,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "KDU-ČSL",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 3,
+    "ne": 14,
+    "zdrzel": 2,
+    "nepritomen": 4
+   },
+   "v": -1,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "Piráti",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 3,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "SPD",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 17,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
+   "v": -1,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 18,
+   "party": "TOP09",
+   "date": "2024-02-28",
+   "kind": "vote",
+   "vote_id": "82529",
+   "what": "Novela občanského zákoníku: pozměňovací návrh (partnerství se všemi právy manželů; určeno podle rozložení hlasů)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 14,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Který pozměňovací návrh to byl, je určeno podle rozložení hlasů, ne podle stenozáznamu. O manželství samotném se nehlasovalo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=82529"
+  },
+  {
+   "statement": 21,
+   "party": "ANO",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 56,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 15
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "KDU-ČSL",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 17,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 5
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "ODS",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 28,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 6
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "Piráti",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 4,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "SPD",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 16,
+    "zdrzel": 0,
+    "nepritomen": 4
+   },
+   "v": -1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "STAN",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 26,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 7
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 21,
+   "party": "TOP09",
+   "date": "2025-05-30",
+   "kind": "vote",
+   "vote_id": "85963",
+   "what": "Novela trestního zákoníku (mj. až 3 rostliny konopí)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 11,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
+   "v": 1,
+   "confidence": "medium",
+   "note": "Hlasování o celém zákoně; postoj ke konopí z něj plyne jen nepřímo.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85963"
+  },
+  {
+   "statement": 22,
+   "party": "ANO",
+   "date": "2025-03-05",
+   "kind": "vote",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 70,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
+  },
+  {
+   "statement": 22,
+   "party": "KDU-ČSL",
+   "date": "2025-03-05",
+   "kind": "vote",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 20,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "17 přítomných poslanců jednotně proti i partnerství",
-   "sources": [
-    "https://cnn.iprima.cz/stejnopohlavni-pary-budou-moci-uzavirat-snatky-snemovna-schvalila-partnerstvi-pro-vsechny-426684",
-    "https://cnn.iprima.cz/smutny-den-pro-stejnopohlavni-pary-pisi-aktiviste-adopce-mozne-jsou-oponuje-poslanec-426699"
-   ],
-   "note": "Volné hlasování. Ostatní kluby nelze zakódovat bez jmenovitého záznamu z dat Sněmovny.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
   },
   {
-   "statement": 21,
-   "party": "spd",
-   "date": "2025-05-30",
+   "statement": 22,
+   "party": "ODS",
+   "date": "2025-03-05",
    "kind": "vote",
-   "what": "Novela trestního zákoníku: legální pěstování až 3 rostlin konopí (142 pro, 16 proti)",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 32,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "všech 16 hlasů proti; zákon ale obsahoval mnoho jiných změn",
-   "sources": [
-    "https://www.ceskenoviny.cz/zpravy/2664188",
-    "https://www.psp.cz/sqw/text/hlasy.sqw?g=85944"
-   ],
-   "note": "Hlasování o celém zákoně: postoj ke konopí z něj plyne jen nepřímo.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 21,
-   "party": "ano",
-   "date": "2025-05-30",
-   "kind": "vote",
-   "what": "Novela trestního zákoníku: legální pěstování až 3 rostlin konopí (142 pro, 16 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "pro celý zákon; klub jednotlivě neuveden",
-   "sources": [
-    "https://www.ceskenoviny.cz/zpravy/2664188",
-    "https://www.psp.cz/sqw/text/hlasy.sqw?g=85944"
-   ],
-   "note": "Hlasování o celém zákoně: postoj ke konopí z něj plyne jen nepřímo.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 21,
-   "party": "stan",
-   "date": "2025-05-30",
-   "kind": "vote",
-   "what": "Novela trestního zákoníku: legální pěstování až 3 rostlin konopí (142 pro, 16 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "vládní návrh",
-   "sources": [
-    "https://www.ceskenoviny.cz/zpravy/2664188",
-    "https://www.psp.cz/sqw/text/hlasy.sqw?g=85944"
-   ],
-   "note": "Hlasování o celém zákoně: postoj ke konopí z něj plyne jen nepřímo.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 21,
-   "party": "pirati",
-   "date": "2025-05-30",
-   "kind": "vote",
-   "what": "Novela trestního zákoníku: legální pěstování až 3 rostlin konopí (142 pro, 16 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "pro; jejich návrh na regulovaný trh neprošel",
-   "sources": [
-    "https://www.ceskenoviny.cz/zpravy/2664188",
-    "https://www.psp.cz/sqw/text/hlasy.sqw?g=85944"
-   ],
-   "note": "Hlasování o celém zákoně: postoj ke konopí z něj plyne jen nepřímo.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 21,
-   "party": "spolu",
-   "date": "2025-05-30",
-   "kind": "vote",
-   "what": "Novela trestního zákoníku: legální pěstování až 3 rostlin konopí (142 pro, 16 proti)",
-   "v": 1,
-   "confidence": "low",
-   "detail": "vládní návrh; u jednoho z hlasování se většina KDU-ČSL zdržela",
-   "sources": [
-    "https://www.ceskenoviny.cz/zpravy/2664188",
-    "https://www.psp.cz/sqw/text/hlasy.sqw?g=85944"
-   ],
-   "note": "Hlasování o celém zákoně: postoj ke konopí z něj plyne jen nepřímo.",
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
   },
   {
    "statement": 22,
-   "party": "spolu",
+   "party": "Piráti",
    "date": "2025-03-05",
    "kind": "vote",
-   "what": "Zvýšení poplatků ČT a ČRo a rozšíření okruhu plátců (99 pro, 89 proti)",
-   "v": -1,
-   "confidence": "high",
-   "detail": "ODS, KDU-ČSL, TOP 09 pro poplatkový model",
-   "sources": [
-    "https://www.echo24.cz/a/HY2xF/zpravy-domov-poslanecka-snemovna-rust-poplatku-ct-cro"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 22,
-   "party": "stan",
-   "date": "2025-03-05",
-   "kind": "vote",
-   "what": "Zvýšení poplatků ČT a ČRo a rozšíření okruhu plátců (99 pro, 89 proti)",
-   "v": -1,
-   "confidence": "high",
-   "detail": "pro",
-   "sources": [
-    "https://www.echo24.cz/a/HY2xF/zpravy-domov-poslanecka-snemovna-rust-poplatku-ct-cro"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 22,
-   "party": "ano",
-   "date": "2025-03-05",
-   "kind": "vote",
-   "what": "Zvýšení poplatků ČT a ČRo a rozšíření okruhu plátců (99 pro, 89 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "proti zvýšení; hlasování nebylo přímo o financování z rozpočtu",
-   "sources": [
-    "https://www.echo24.cz/a/HY2xF/zpravy-domov-poslanecka-snemovna-rust-poplatku-ct-cro"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 22,
-   "party": "spd",
-   "date": "2025-03-05",
-   "kind": "vote",
-   "what": "Zvýšení poplatků ČT a ČRo a rozšíření okruhu plátců (99 pro, 89 proti)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "proti zvýšení; totéž",
-   "sources": [
-    "https://www.echo24.cz/a/HY2xF/zpravy-domov-poslanecka-snemovna-rust-poplatku-ct-cro"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
-  },
-  {
-   "statement": 22,
-   "party": "pirati",
-   "date": "2025-03-05",
-   "kind": "vote",
-   "what": "Zvýšení poplatků ČT a ČRo a rozšíření okruhu plátců (99 pro, 89 proti)",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "zdržel se / rozdělen",
+   "counts": {
+    "ano": 1,
+    "ne": 0,
+    "zdrzel": 1,
+    "nepritomen": 2
+   },
    "v": null,
    "confidence": "high",
-   "detail": "pro jen 1 poslankyně; klub novelu nepodpořil kvůli rozšíření plátců",
-   "sources": [
-    "https://www.echo24.cz/a/HY2xF/zpravy-domov-poslanecka-snemovna-rust-poplatku-ct-cro"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
   },
   {
    "statement": 22,
-   "party": "spolu",
-   "date": "2026-10-24",
+   "party": "SPD",
+   "date": "2025-03-05",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 19,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
+  },
+  {
+   "statement": 22,
+   "party": "STAN",
+   "date": "2025-03-05",
+   "kind": "vote",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 31,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "ODS, KDU-ČSL, TOP 09 pro zamítnutí",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
   },
   {
    "statement": 22,
-   "party": "stan",
-   "date": "2026-10-24",
+   "party": "TOP09",
+   "date": "2025-03-05",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
+   "vote_id": "85057",
+   "what": "Novela z. o ČT a ČRo (zvýšení poplatků)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 14,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "pro zamítnutí",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
-   "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "note": "Hlasování o zvýšení poplatků, ne přímo o financování z rozpočtu.",
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=85057"
   },
   {
    "statement": 22,
-   "party": "pirati",
+   "party": "ANO",
    "date": "2026-10-24",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 69,
+    "zdrzel": 0,
+    "nepritomen": 11
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
+  },
+  {
+   "statement": 22,
+   "party": "KDU-ČSL",
+   "date": "2026-10-24",
+   "kind": "vote",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 14,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
    "v": -1,
    "confidence": "high",
-   "detail": "pro zamítnutí",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
   },
   {
    "statement": 22,
-   "party": "ano",
+   "party": "Motoristé",
    "date": "2026-10-24",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 13,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
    "v": 1,
-   "confidence": "medium",
-   "detail": "koalice návrh prosadila; hlasy klubu jednotlivě neuvedeny",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
   },
   {
    "statement": 22,
-   "party": "spd",
+   "party": "ODS",
    "date": "2026-10-24",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "totéž",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 23,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 4
+   },
+   "v": -1,
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
   },
   {
    "statement": 22,
-   "party": "motoriste",
+   "party": "Piráti",
    "date": "2026-10-24",
    "kind": "vote",
-   "what": "Zrušení poplatků a financování ze státního rozpočtu, 1. čtení: návrh na zamítnutí neprošel (81 ze 177)",
-   "v": 1,
-   "confidence": "medium",
-   "detail": "totéž",
-   "sources": [
-    "https://www.mediaguru.cz/vladni-koalice-protlacila-ve-snemovne-zruseni-poplatku-pro-ct-a-cro-v-prvnim-cteni"
-   ],
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 16,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": -1,
+   "confidence": "high",
    "note": null,
-   "coded_by": "Claude, pilot 2026-11-14; not yet second-read"
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
+  },
+  {
+   "statement": 22,
+   "party": "SPD",
+   "date": "2026-10-24",
+   "kind": "vote",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 14,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
+  },
+  {
+   "statement": 22,
+   "party": "STAN",
+   "date": "2026-10-24",
+   "kind": "vote",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 21,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 1
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
+  },
+  {
+   "statement": 22,
+   "party": "TOP09",
+   "date": "2026-10-24",
+   "kind": "vote",
+   "vote_id": "88874",
+   "what": "Novela z. o ČT a ČRo (zrušení poplatků): návrh na zamítnutí",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 7,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=88874"
+  },
+  {
+   "statement": 24,
+   "party": "ODS",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 24,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 10
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "ANO",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 60,
+    "zdrzel": 1,
+    "nepritomen": 10
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "STAN",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 31,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "KDU-ČSL",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 20,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 3
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "Piráti",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 4,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 0
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "SPD",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "proti",
+   "counts": {
+    "ano": 0,
+    "ne": 15,
+    "zdrzel": 0,
+    "nepritomen": 5
+   },
+   "v": -1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 24,
+   "party": "TOP09",
+   "date": "2024-06-21",
+   "kind": "vote",
+   "vote_id": "83203",
+   "what": "Novela z. o správě voleb (korespondenční volba)",
+   "club_vote": "pro",
+   "counts": {
+    "ano": 12,
+    "ne": 0,
+    "zdrzel": 0,
+    "nepritomen": 2
+   },
+   "v": 1,
+   "confidence": "high",
+   "note": null,
+   "source": "https://www.psp.cz/sqw/hlasy.sqw?g=83203"
+  },
+  {
+   "statement": 8,
+   "party": "ANO",
+   "date": "2026-07-20",
+   "kind": "pledge_open",
+   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
+   "v": null,
+   "proposed_v": 0,
+   "confidence": "high",
+   "note": "Zatím nesplněno.",
+   "source": "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717"
+  },
+  {
+   "statement": 8,
+   "party": "SPD",
+   "date": "2026-07-20",
+   "kind": "pledge_open",
+   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
+   "v": null,
+   "proposed_v": 0,
+   "confidence": "high",
+   "note": "Zatím nesplněno.",
+   "source": "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717"
+  },
+  {
+   "statement": 8,
+   "party": "Motoristé",
+   "date": "2026-07-20",
+   "kind": "pledge_open",
+   "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložen na další novelu (od 2028)",
+   "v": null,
+   "proposed_v": 0,
+   "confidence": "high",
+   "note": "Zatím nesplněno.",
+   "source": "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717"
   }
  ]
 }
