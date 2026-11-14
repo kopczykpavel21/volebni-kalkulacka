@@ -18,7 +18,7 @@ const P = {
     compare: "Porovnat výrok po výroku", record: "Co strana udělala ve vládě", source: "zdroj",
     th_s: "Výrok", th_you: "Vy", th_party: "Strana říká", th_did: "Strana udělala", th_basis: "Podklad",
     pa: "souhlasí", pn: "nesouhlasí", p0: "neutrální", pu: "neznámé",
-    did_same: "v souladu", did_against: "opak", did_traded: "ustoupila při vyjednávání o vládě",
+    did_same: "v souladu", did_against: "opak", did_traded: "ustoupila při vyjednávání o vládě", did_open: "slib zatím odložen", did_for: "jednala pro", did_anti: "jednala proti",
     ya: ["rozhodně ano", "spíše ano", "nevím", "spíše ne", "rozhodně ne"], yskip: "přeskočeno",
     b_party: "odpověď strany 2025", b_editors: "doplněno editory 2025", b_news: "zprávy v médiích", flipped: "z opačně položeného výroku",
     uncoded: "Zatím nezakódované strany",
@@ -45,7 +45,7 @@ const P = {
     compare: "Compare statement by statement", record: "What the party did in government", source: "source",
     th_s: "Statement", th_you: "You", th_party: "Party says", th_did: "Party did", th_basis: "Basis",
     pa: "agrees", pn: "disagrees", p0: "neutral", pu: "unknown",
-    did_same: "consistent", did_against: "the opposite", did_traded: "gave it up in coalition talks",
+    did_same: "consistent", did_against: "the opposite", did_traded: "gave it up in coalition talks", did_open: "pledge postponed so far", did_for: "acted for", did_anti: "acted against",
     ya: ["strongly yes", "somewhat yes", "not sure", "somewhat no", "strongly no"], yskip: "skipped",
     b_party: "party's 2025 answer", b_editors: "filled in by editors, 2025", b_news: "news reports", flipped: "from a statement worded the opposite way",
     uncoded: "Parties not yet coded",
@@ -112,8 +112,8 @@ function basis(p) {
 }
 function did(p) {
   if (!p || !p.acted) return "";
-  const a = p.acted, label = a.kind === "traded" ? t("did_traded") : a.v === p.v ? t("did_same") : t("did_against");
-  return [el("span", { class: a.v === p.v ? "pos-a" : "pos-n" }, label), el("div", { class: "muted" }, a[lang], a.url ? [" (", el("a", { href: a.url, target: "_blank", rel: "noopener" }, t("source")), ")"] : null)];
+  const a = p.acted, label = a.kind === "traded" ? t("did_traded") : a.kind === "open" ? t("did_open") : !p.v ? (a.v > 0 ? t("did_for") : t("did_anti")) : a.v === p.v ? t("did_same") : t("did_against");
+  return [el("span", { class: a.v === p.v || !p.v ? "pos-a" : "pos-n" }, label), el("div", { class: "muted" }, a[lang], a.url ? [" (", el("a", { href: a.url, target: "_blank", rel: "noopener" }, t("source")), ")"] : null)];
 }
 
 function ranking() {
