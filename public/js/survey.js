@@ -7,7 +7,8 @@ const P = {
     h: "Jak má být Česko spravováno?", p: "25 otázek o tom, co má ve správě státu zůstat a co se změnit. Zabere to asi deset minut.",
     steps: [["Zůstat, nebo změnit", "U každé otázky nejdřív uvidíte, co platí dnes."], ["Při změně vyberte směr", "Můžete také krátce napsat proč."], ["Otázky můžete vynechat", "Odešlou se jen ty, na které odpovíte."]],
     blank: "Žádná otázka není povinná. Odpovědi se odešlou až na konci tlačítkem Odeslat odpovědi.", part: "Část {a} z {b}",
-    consent: "Souhlasím, aby mé odpovědi z průzkumu byly anonymně uloženy pro výzkum.",
+    consent: "Kliknutím na „Odeslat odpovědi“ souhlasíte s tím, že se vaše odpovědi anonymně uloží pro výzkum a započítají do veřejných součtů.",
+    intro_note: "Dokud na konci nekliknete na „Odeslat odpovědi“, nic se neukládá ani neodesílá.",
     now: "Dnes platí", ask: "Má to tak zůstat?", how: "Jak?", why: "Proč? (nepovinné)", pick_n: "Vyberte nejvýše {n}.",
     bg_h: "O vás (nepovinné)", bg_p: "Tyto údaje pomáhají přepočítat výsledky tak, aby lépe odpovídaly celé populaci.",
     choose: "– nevybráno –", submit: "Odeslat odpovědi", thanks_h: "Děkujeme", thanks_p: "Odpovědi byly uloženy.",
@@ -17,7 +18,8 @@ const P = {
     h: "How should Czechia be governed?", p: "25 questions about what should stay and what should change in how the country is run. It takes about ten minutes.",
     steps: [["Keep or change", "For each question you first see what applies today."], ["For a change, pick a direction", "You can also say briefly why."], ["You may leave questions out", "Only the ones you answer are sent."]],
     blank: "No question is required. Answers are sent only at the end, with the Submit answers button.", part: "Part {a} of {b}",
-    consent: "I agree that my survey answers are stored anonymously for research.",
+    consent: "By clicking “Submit answers” you agree that your answers are stored anonymously for research and counted in the public totals.",
+    intro_note: "Nothing is stored or sent until you click “Submit answers” at the end.",
     now: "Today", ask: "Should it stay this way?", how: "How?", why: "Why? (optional)", pick_n: "Choose up to {n}.",
     bg_h: "About you (optional)", bg_p: "These details help reweight the results so they better reflect the whole population.",
     choose: "– not selected –", submit: "Submit answers", thanks_h: "Thank you", thanks_p: "Your answers were stored.",
@@ -26,7 +28,7 @@ const P = {
 };
 const t = makeT(P);
 const BLOCKS = ["A", "B", "C", "D", "E", "bg"];
-const S = { view: "intro", block: 0, answers: {}, bg: {}, consent: false };
+const S = { view: "intro", block: 0, answers: {}, bg: {} };
 let D, draw;
 const opts = q => (q.opts ? D.survey[q.opts][lang] : q[lang].o);
 
@@ -62,12 +64,10 @@ function vQuestion(q) {
 }
 
 function vIntro() {
-  const go = btn(t("start"), () => { S.view = "form"; S.block = 0; draw(); }, "primary");
-  go.disabled = !S.consent;
   return [el("h1", {}, t("h")), el("p", { class: "lead" }, t("p")), el("div", { class: "card" },
     el("ol", { class: "steps" }, t("steps").map(([a, b]) => el("li", {}, el("div", {}, el("strong", {}, a), el("span", {}, b))))),
-    el("label", { class: "check", style: "margin-top:1.2rem" }, el("input", { type: "checkbox", checked: S.consent, onchange: e => { S.consent = e.target.checked; go.disabled = !S.consent; } }), t("consent")),
-    el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink()), el("div", { class: "row" }, el("span"), go))];
+    el("div", { class: "row" }, el("span"), btn(t("start"), () => { S.view = "form"; S.block = 0; draw(); }, "primary"))),
+    el("p", { class: "hint" }, t("intro_note") + " ", privacyLink())];
 }
 
 function vForm() {
@@ -92,7 +92,9 @@ function vForm() {
   return [el("h1", {}, t("h")), el("p", { class: "muted small" }, fmt(t("part"), { a: S.block + 1, b: BLOCKS.length })),
     el("div", { class: "progress" }, el("i", { style: `width:${100 * (S.block + 1) / BLOCKS.length}%` })),
     S.block === 0 ? el("p", { class: "hint" }, t("blank")) : null,
-    el("div", { class: "card" }, body, el("div", { class: "row" }, btn(t("back"), () => { if (S.block > 0) move(-1); else { S.view = "intro"; draw(); } }), el("span", {}, status, " ", fwd)))];
+    el("div", { class: "card" }, body,
+      last ? [el("p", { style: "margin-top:1.2rem" }, t("consent")), el("p", { class: "small muted" }, T[lang].consent_note, " ", privacyLink())] : null,
+      el("div", { class: "row" }, btn(t("back"), () => { if (S.block > 0) move(-1); else { S.view = "intro"; draw(); } }), el("span", {}, status, " ", fwd)))];
 }
 
 function vThanks() {

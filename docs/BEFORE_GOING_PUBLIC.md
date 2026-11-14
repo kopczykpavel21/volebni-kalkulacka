@@ -19,7 +19,7 @@ pseudonymous (random id, no IP address, no e-mail), which reduces risk but does 
 - name who runs the site and how to contact them: a draft notice is at `/soukromi`; fill in
   `CONTROLLER` at the top of `public/js/privacy.js` and have the text reviewed;
 - keep the database in an EU region on Railway, so answers do not leave the EU;
-- collect explicit consent (the calculator button that names the consent, and the survey checkbox, do this; have a lawyer confirm the button wording is explicit enough) and allow deletion (the "Smazat" button does this);
+- collect explicit consent (the buttons that name the consent in the calculator and in the survey do this; have a lawyer confirm the button wording is explicit enough) and allow deletion (the "Smazat" button does this);
 - get ethics approval if the data is used for university research;
 - have a data protection officer or lawyer confirm the setup.
 
