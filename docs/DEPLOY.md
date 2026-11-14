@@ -22,7 +22,7 @@ You do not need to create tables. The site creates them on its first request.
    | --- | --- |
    | `DATABASE_URL` | the Railway URL from step 1 |
    | `ADMIN_TOKEN` | a long random secret (see `.env.example` for a command that makes one) |
-   | `MIN_PUBLIC_N` | `5`, or `1` while you test |
+   | `MIN_PUBLIC_N` | Optional. Default `1` (results show at once). Set `5` or more before going public |
 
 4. Press **Deploy**.
 

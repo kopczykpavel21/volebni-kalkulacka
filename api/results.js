@@ -6,7 +6,7 @@ import { aggregate, LATEST_CALC, LATEST_SURVEY } from '../lib/aggregate.js';
 export default handler(['GET'], async (req, res) => {
   const pool = await db();
   const [calc, surv] = await Promise.all([pool.query(LATEST_CALC), pool.query(LATEST_SURVEY)]);
-  const min = Math.max(1, parseInt(process.env.MIN_PUBLIC_N || '5', 10) || 5);
+  const min = Math.max(1, parseInt(process.env.MIN_PUBLIC_N || '1', 10) || 1);
   const both = new Set(calc.rows.map(r => r.respondent_id));
   const linked = surv.rows.filter(r => both.has(r.respondent_id)).length;
   const R = aggregate(calc.rows, surv.rows);
