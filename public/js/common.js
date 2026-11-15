@@ -2,7 +2,7 @@
 
 export const T = {
   cs: {
-    brand: "Kalkulačka", nav_calc: "Kalkulačka", nav_survey: "Průzkum", nav_results: "Výsledky", nav_method: "Jak to funguje",
+    brand: "Kalkulačka", nav_calc: "Kalkulačka", nav_survey: "Průzkum", nav_results: "Výsledky", nav_records: "Záznamy", nav_method: "Jak to funguje",
     footer: "Prototyp. Postoje stran jsou předběžné. Uložené odpovědi slouží pouze pro výzkum.", privacy: "Ochrana osobních údajů",
     research: "Odpovědi se ukládají jen s vaším souhlasem a slouží pouze pro výzkum. Neprodávají se a nepředávají politickým stranám ani inzerentům.",
     warn: "Předběžná data: to, co strany říkají, pochází z jejich odpovědí v roce 2025. To, co udělaly, pochází ze záznamů hlasování Poslanecké sněmovny a z několika zpráv. ODS, KDU-ČSL a TOP 09 mají zatím společné postoje koalice SPOLU.",
@@ -14,7 +14,7 @@ export const T = {
     load_err: "Stránku se nepodařilo načíst."
   },
   en: {
-    brand: "Calculator", nav_calc: "Calculator", nav_survey: "Survey", nav_results: "Results", nav_method: "How it works",
+    brand: "Calculator", nav_calc: "Calculator", nav_survey: "Survey", nav_results: "Results", nav_records: "Records", nav_method: "How it works",
     footer: "Prototype. Party positions are provisional. Saved answers are used for research only.", privacy: "Privacy notice",
     research: "Answers are stored only with your consent and are used for research only. They are not sold or passed to political parties or advertisers.",
     warn: "Provisional data: what parties say comes from their 2025 answers. What they did comes from the Chamber of Deputies voting records and a few news reports. ODS, KDU-ČSL and TOP 09 still share the stated positions of the SPOLU list.",
@@ -99,7 +99,7 @@ export function mount(render) {
     const t = T[lang];
     document.querySelector("header").replaceChildren(
       el("a", { class: "brand", href: "/" }, t.brand, el("span", {}, "prototyp")),
-      el("nav", {}, [["/", t.nav_calc], ["/pruzkum", t.nav_survey], ["/vysledky", t.nav_results], ["/metoda", t.nav_method]].map(([href, label]) =>
+      el("nav", {}, [["/", t.nav_calc], ["/pruzkum", t.nav_survey], ["/vysledky", t.nav_results], ["/zaznamy", t.nav_records], ["/metoda", t.nav_method]].map(([href, label]) =>
         el("a", { href, "aria-current": (location.pathname.replace(/\.html$/, "").replace(/\/index$/, "/") === href) ? "page" : null }, label)),
         btn(lang === "cs" ? "English" : "Česky", () => { lang = lang === "cs" ? "en" : "cs"; ls.set("vk_lang", lang); draw(); })));
     document.querySelector("footer").replaceChildren(t.footer + " ", el("a", { href: "/soukromi" }, t.privacy));

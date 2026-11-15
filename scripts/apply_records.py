@@ -2,7 +2,7 @@
 Run after build_parties.py. Vote tallies were read from the Chamber of Deputies open data (psp.cz) on 2026-11-14.
 
 Rules (agreed 2026-11-14):
-- a club is "for"/"against" when at least two thirds of its members who cast a vote did so (and at least 5 voted);
+- a club is "for"/"against" when at least two thirds of its members who cast a vote did so (and at least 3 voted);
 - only records with high or medium confidence that are not whole-bill votes change the match; the rest are notes;
 - the newest action counts; a postponed pledge counts as 0 (half way);
 - SPOLU is split into ODS, KDU-ČSL and TOP 09; a "no" to a state budget is not coded.
@@ -37,7 +37,7 @@ for st, vid, direction, conf, note_only, note, supporters_only in MAP:
     date, name, clubs = V[vid]
     for club, (a, n, z, ab) in clubs.items():
         cast = a + n + z
-        side = None if cast < 5 else 1 if a/cast >= 2/3 else -1 if n/cast >= 2/3 else None
+        side = None if cast < 3 else 1 if a/cast >= 2/3 else -1 if n/cast >= 2/3 else None
         if supporters_only and side == -1: side = None
         recs.append({"statement": st, "party": club, "date": date, "kind": "vote", "vote_id": vid, "what": name,
             "counts": {"ano": a, "ne": n, "zdrzel": z, "nepritomen": ab}, "v": None if side is None else side*direction,
@@ -69,6 +69,24 @@ pledge(23, GOV, "2026-11-09", "gov", 1, "high", "Vláda schválila návrh ústav
 pledge(25, GOV, "2026-03-23", "open", 0, "medium", "Koaliční poslanci připravili povinnou registraci subjektů se zahraničními vazbami; ministr spravedlnosti řekl, že vláda takový zákon nechystá, premiér ho dál hájí",
        "Coalition MPs drafted compulsory registration of bodies with foreign ties; the justice minister said the government is not preparing such a law, while the prime minister still defends it",
        "https://ct24.ceskatelevize.cz/clanek/domaci/zakon-o-registraci-neziskovych-organizaci-vlada-ani-ministerstvo-nechystaji-zastane-ho-vyhlaska-371604", "Slib zatím nesplněn.")
+# ---- Fiala government 2021-2025 (ODS, KDU-ČSL, TOP 09, STAN, Piráti until 2024), checked 2026-11-15
+FIALA = ["ODS", "KDU-ČSL", "TOP09", "STAN", "Piráti"]
+PKG = "https://advokatnidenik.cz/2023/10/13/poslanecka-snemovna-schvalila-konsolidacni-balicek/"
+pledge(1, ["ODS"], "2024-02-06", "gov", -1, "medium", "Vláda neurčila termín přijetí eura ani vstupu do ERM II; ministerstvo financí vedené ODS navrhlo o vstup neusilovat",
+       "The government set no date for the euro or for ERM II entry; the ODS-led finance ministry proposed not to seek entry",
+       "https://www.seznamzpravy.cz/clanek/ekonomika-finance-byznys-meny-kryptomeny-spor-o-euro-se-odklada-ods-chce-cekat-mensi-strany-sni-o-dansku-242063")
+pledge(1, ["STAN", "TOP09", "KDU-ČSL", "Piráti"], "2024-02-06", "blocked", None, "medium", "Menší vládní strany chtěly termín vstupu do ERM II (STAN jmenoval zmocněnce pro euro); po koaličním jednání z toho sešlo",
+       "The smaller coalition parties wanted a date for ERM II entry (STAN appointed a euro commissioner); it was dropped after coalition talks",
+       "https://echo24.cz/a/HkLjw/zpravy-domaci-ne-zmocnenec-ale-poradce-fiala-dohodovaci-rizeni", "Zablokováno koaličním partnerem; do shody se nezapočítává.", True)
+pledge(6, FIALA, "2023-10-13", "gov", 1, "medium", "Konsolidační balíček: sazba daně z příjmů 23 % nově už od trojnásobku průměrné mzdy (dříve od čtyřnásobku)",
+       "Consolidation package: the 23% income tax rate now applies from three times the average wage (previously four times)", PKG, "Součást rozsáhlého balíčku.")
+pledge(12, FIALA, "2023-10-13", "gov", -1, "medium", "Konsolidační balíček: DPH na léky se zvýšila z 10 na 12 %",
+       "Consolidation package: VAT on medicines rose from 10% to 12%", "https://www.pruvodcepodnikanim.cz/clanek/schvaleny-konsolidacni-balicek/", "Součást rozsáhlého balíčku.")
+pledge(14, FIALA, "2023-11-01", "gov", 1, "high", "Vláda zvýšila kvóty pro kvalifikované pracovníky ze třetích zemí o 20 tisíc ročně od roku 2024",
+       "The government raised quotas for qualified workers from third countries by 20,000 a year from 2024", "https://www.ceskenoviny.cz/zpravy/2428376")
+pledge(14, GOV, "2026-10-01", "open", None, "low", "Ministr průmyslu oznámil záměr zvýšit kvóty pro pracovníky z Filipín a Indie; vláda o tom zatím nerozhodla",
+       "The industry minister announced a plan to raise quotas for workers from the Philippines and India; the government has not decided yet",
+       "https://www.newstream.cz/zpravy-z-firem/bez-filipincu-se-ceske-firmy-neobejdou-stat-je-presto-nechava-cekat", None, True)
 json.dump({"about": __doc__, "votes": {k: {"date": v[0], "name": v[1], "clubs": {c: dict(zip(["ano","ne","zdrzel","nepritomen"], x)) for c, x in v[2].items()}} for k, v in sorted(V.items())}, "records": recs},
           open(ROOT/'scripts/records.json', 'w'), ensure_ascii=False, indent=1)
 
@@ -99,6 +117,12 @@ for (pid, st), r in latest.items():
     if r.get('note'): cs += " " + r['note']
     pos['acted'] = {"v": r['v'], "kind": r['kind'], "cs": cs, "en": en, "url": r['source']}; n += 1
 json.dump(d, open(path, 'w'), ensure_ascii=False, separators=(',', ':'))
+applied = {id(r) for r in latest.values()}
+names = {"ANO":"ANO","ODS":"ODS","KDU-ČSL":"KDU-ČSL","TOP09":"TOP 09","STAN":"STAN","Piráti":"Piráti","SPD":"SPD","Motoristé":"Motoristé","KSČM":"KSČM (dnes Stačilo!)","ČSSD":"ČSSD (dnes SOCDEM)","Nezařaz":None}
+out = [{"statement": r["statement"], "party": names[r["party"]], "date": r["date"], "kind": r["kind"], "what": r["what"], "what_en": r.get("what_en"),
+        "counts": r.get("counts"), "v": r["v"], "confidence": r["confidence"], "note": r.get("note"), "source": r["source"], "applied": id(r) in applied}
+       for r in sorted(recs, key=lambda r: (r["statement"], r["date"], r["party"])) if names.get(r["party"])]
+json.dump(out, open(ROOT/'public/data/records.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 acted = [(p['id'], s, x['v'], x['acted']['v']) for p in d['parties'] for s, x in p['positions'].items() if x.get('acted')]
 print(len(recs), "records;", n, "applied;", len(acted), "positions with an action;", sum(1 for a in acted if a[2] and a[2] != a[3]), "differ from the stated position")
 print("parties:", [p['id'] for p in d['parties']])
