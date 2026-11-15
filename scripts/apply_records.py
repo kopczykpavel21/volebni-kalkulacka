@@ -46,6 +46,29 @@ for p in ["ANO", "SPD", "Motoristé"]:
     recs.append({"statement": 8, "party": p, "date": "2026-07-20", "kind": "open", "what": "Vláda schválila první důchodovou novelu bez slíbeného stropu 65 let; strop odložila na další novelu",
         "what_en": "The government approved its first pension bill without the promised cap at 65 and postponed the cap to a later bill",
         "v": 0, "confidence": "high", "note_only": False, "note": "Slib zatím nesplněn.", "source": "https://www.e15.cz/domaci/politika/babis-odsouva-strop-duchodoveho-veku-vlada-chce-nejdriv-resit-narocne-profese-1433717"})
+# ---- source B: pledges in the government programme (5 Jan 2026) and what happened to them, checked 2026-11-15
+GOV = ["ANO", "SPD", "Motoristé"]
+def pledge(st, parties, date, kind, v, conf, cs, en, src, note=None, note_only=False):
+    for p in parties:
+        recs.append({"statement": st, "party": p, "date": date, "kind": kind, "what": cs, "what_en": en, "v": v, "confidence": conf,
+                     "note_only": note_only, "note": note, "source": src, "basis": "programové prohlášení vlády 2026"})
+pledge(1, GOV, "2026-01-05", "gov", -1, "high", "Vláda se v programovém prohlášení zavázala nepodnikat kroky k přijetí eura",
+       "In its programme the government committed to take no steps towards adopting the euro", "https://www.ceskenoviny.cz/index_view.php?id=2741424")
+pledge(3, ["ANO", "Motoristé"], "2026-01-05", "gov", -1, "medium", "Programové prohlášení vylučuje referendum o členství v NATO",
+       "The government programme rules out a referendum on NATO membership", "https://forbes.cz/vlada-schvalila-svuj-program-slibuje-dostupnejsi-bydleni-i-reformu-duchodu/")
+pledge(5, GOV, "2026-01-05", "open", 0, "medium", "Vláda odmítla povolenky ETS2 a žádá zásadní revizi Green Dealu, ne odstoupení od něj",
+       "The government rejected ETS2 allowances and demands a fundamental revision of the Green Deal, not withdrawal from it",
+       "https://cnn.iprima.cz/vlada-schvalila-nove-programove-prohlaseni-prioritami-jsou-levnejsi-energie-ci-zmeny-duchodu-500481",
+       "Jednostranně od Green Dealu odstoupit nelze, jde o právo EU.")
+pledge(12, GOV, "2026-01-05", "open", 0, "low", "Vláda slíbila nulovou DPH na léky na předpis; splnění se zatím nepodařilo ověřit",
+       "The government promised zero VAT on prescription medicines; delivery could not be verified yet",
+       "https://www.echo24.cz/a/Hd86x/zpravy-domov-vlada-programmove-prohlaseni-zastropovani-duchodoveho-veku-50-tisic-pro-statni-zamestnance", None, True)
+pledge(23, GOV, "2026-11-09", "gov", 1, "high", "Vláda schválila návrh ústavního zákona o celostátním referendu (300 tisíc podpisů; členství v EU a NATO vyloučeno)",
+       "The government approved a constitutional bill on a nationwide referendum (300,000 signatures; EU and NATO membership excluded)",
+       "https://www.ceskenoviny.cz/zpravy/zive-tk-po-jednani-vlady/2897324", "K přijetí je nutná ústavní většina ve Sněmovně i v Senátu, kterou koalice nemá.")
+pledge(25, GOV, "2026-03-23", "open", 0, "medium", "Koaliční poslanci připravili povinnou registraci subjektů se zahraničními vazbami; ministr spravedlnosti řekl, že vláda takový zákon nechystá, premiér ho dál hájí",
+       "Coalition MPs drafted compulsory registration of bodies with foreign ties; the justice minister said the government is not preparing such a law, while the prime minister still defends it",
+       "https://ct24.ceskatelevize.cz/clanek/domaci/zakon-o-registraci-neziskovych-organizaci-vlada-ani-ministerstvo-nechystaji-zastane-ho-vyhlaska-371604", "Slib zatím nesplněn.")
 json.dump({"about": __doc__, "votes": {k: {"date": v[0], "name": v[1], "clubs": {c: dict(zip(["ano","ne","zdrzel","nepritomen"], x)) for c, x in v[2].items()}} for k, v in sorted(V.items())}, "records": recs},
           open(ROOT/'scripts/records.json', 'w'), ensure_ascii=False, indent=1)
 
